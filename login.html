@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Login</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon/favicon.png">
+</head>
+<body>
+    <!-- Bagian Header -->
+    <header-bar></header-bar>
+
+    <!-- Bagian drawer -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+                    <li><a href="eksplorasi.html">Eksplorasi</a></li>
+                    <li><a href="jenis.html">Jenis</a></li>
+                    <li><a href="laporan.html">Laporan</a></li>
+                    <li><a href="AboutUs.html">Tentang Kami</a></li>
+        </ul>
+    </div>
+
+    <!-- Bagian main -->
+    <main class="main_login">
+        <section class="left-content">
+            <img src="./img/sign-in.png" alt="Bookshelf Application Animated" class="image-animation">
+        </section>
+        <section class="right-content-Login">
+            <h2>LOGIN</h2>
+            <form id="formulir-Login">
+                <div class="input">
+                    <img src="./img/icon-user.png" alt="" class="iconUserLogin">
+                    <label for="inputLoginUsername"></label>
+                    <input id="inputLoginUsername" name="username" type="text" required placeholder="Username">
+                </div>
+                <div class="input">
+                    <img src="./img/icon-password.png" alt="" class="iconUserPassword">
+                    <label for="inputLoginUserPassword"></label>
+                    <input id="inputLoginUserPassword" name="password" type="password" required placeholder="Password">
+                </div>
+                <input id="login" type="submit" name="Submit" value="Login"><br>
+            </form>
+            <p>Belum punya akun? <a href="register.html">Register Sekarang</a></p>
+        </section>
+    </main>
+
+    <!-- Bagian Footer -->
+    <login-bar></login-bar>
+
+    <script src="carousel.js"></script>
+    <script type="module" src="./src/script/index.js"></script>
+    
+    
+</body>
+</html>
