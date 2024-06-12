@@ -7,11 +7,13 @@
 - explore
 - detail
 - upload
+- Menu tambahan (sampah bersih)
+- Revisi Dropdown
 
 Tugas Belum Selesai
 ==
 - Halaman admin
-- Menu tambahan (sampah bersih)
 - Menggunakan NodeJS
-- Revisi Dropdown
+- Integrasi dengan BackEnd
+- Mengambil API
 - dl...
