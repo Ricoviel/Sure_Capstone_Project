@@ -1,0 +1,1433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    background-color: #4f6e52;
+}
+
+
+header .navigation ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .navigation a,
+header h3,
+header i{
+    color: white;
+}
+
+.sci {
+    position: relative;
+}
+
+.sci a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    flex-direction: row;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+
+span{
+    color: black;   
+}
+
+.burger{
+    display: none;
+}
+
+.burger .bars{
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+}
+
+.sidebar{
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    height: 100%;
+    width: 50%;
+    padding: 2rem 5%;
+    z-index: 99;
+}
+
+.sidebar ul li{
+    margin-top: 10px;
+    list-style: none;
+}
+
+.sidebar.active{
+    left: 0;
+}
+
+/* Css untuk bagian carousel */
+.hero{
+    height: 500px;
+}
+
+.hero .card1{
+    background-image: url(../../img/carousel/carousel1.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 2rem 5%;
+    background-position: bottom;
+}
+
+.hero .card2{
+    background-image: url(../../img/carousel/carousel2.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 2rem 5%;
+    background-position: bottom;
+}
+
+.hero .card3{
+    background-image: url(../../img/carousel/carousel3.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 2rem 5%;
+    background-position: bottom;
+}
+
+.hero .heroText{
+    color: #fff;
+}
+
+.heroText h1{
+    font-size: 50px;
+}
+
+.heroText p{
+    font-size: 25px;
+}
+
+/* Hero CSS end */
+
+/* Tombol navigasi start */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white !important; /* Warna tombol */
+    width: 50px;
+    height: 50px;
+    margin-top: -25px; /* Posisikan di tengah vertikal */
+    /* background-color: red; */
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px; /* Ukuran ikon panah */
+}
+
+/* Tombol navigasi end */
+
+/* Penyuluhan */
+.penyuluhanContent{
+    display: flex;
+    background: linear-gradient(rgba(168, 205, 159, 0.9), rgba(79, 111, 82, 0.8));
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.penyuluhan{
+    color: #fff;
+    padding: 2rem 10%;
+}
+
+.penyuluhan .title{
+    text-align: center;
+    color: black;
+}
+
+.penyuluhan .title h3{
+    font-size: 30px;
+}
+
+.penyuluhanContent .coll1{
+    margin-right: 30px;
+    width: 50%;
+}
+
+.penyuluhanContent .coll2{
+    width: 50%;
+}
+
+.penyuluhanContent .coll1 img,
+.penyuluhanContent .coll2 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.penyuluhanContent .coll2 .card2{
+    margin-top: 30px;
+}
+
+.penyuluhanContent h4{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.penyuluhanContent p{
+    font-size: 12px;
+}
+
+/* Trash */
+.trash{
+    padding: 2rem 10%;
+}
+
+.trash .title h3{
+    font-size: 30px;
+}
+
+.trashContent{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.trash .images img {
+    border-radius: 10px;
+    width: 100%; /* Pastikan gambar memenuhi lebar kontainer */
+    height: 140px; /* Biarkan tinggi menyesuaikan agar gambar tidak terdistorsi */
+    max-height: 200px; /* Batasi tinggi maksimal gambar */
+    max-width: 100%; /* Batasi lebar maksimal gambar */
+}
+
+.trash .card{
+    width: 250px;
+}
+
+.trash .trashContent h3{
+    margin: 5px 0;
+}
+
+.trash .trashContent img{
+    border-radius: 10px;
+}
+
+.trash button{
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Recyle */
+.recyle{
+    padding: 2rem 10%;
+    color: #fff;
+}
+
+.recyle .card{
+    background: linear-gradient(#A8CD9F, rgba(79, 111, 82, 0.8));
+    padding: 2rem 5%;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.cardContent .reduce{
+    padding: 30px;
+    margin: 0 20px;
+}
+
+.cardContent .reuse{
+    padding: 30px;
+    margin: 0 20px;
+}
+
+.cardContent .recycle{
+    padding: 30px;
+    margin: 0 20px;
+}
+
+.recyle .cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.recyle .cardContent i{
+    font-size: 30px;
+}
+
+.recyle .cardContent h3{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* Features */
+.features {
+    padding: 2rem 10%;
+}
+
+.features .title h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.featuresContent {
+    margin-top: 30px;
+    display: flex;
+    align-items: stretch; /* Ensure all cards have the same height */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap between cards if necessary */
+}
+
+.features .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+    border: 1px solid #ddd; /* Optional: Add border for better visibility */
+    border-radius: 10px;
+    padding: 10px; /* Optional: Add padding inside the card */
+    background-color: white; /* Optional: Background color for the card */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.features .card:hover{
+    background: linear-gradient(#A8CD9F, rgba(79, 111, 82, 0.8));
+    cursor: pointer;
+}
+
+.features .images {
+    flex: 0 0 auto; /* Prevent image from shrinking */
+}
+
+.features .images img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+
+.features .cardText {
+    flex: 1 0 auto; /* Allow card text to grow and take available space */
+    text-align: left;
+    padding: 10px 0; /* Optional: Add padding for better spacing */
+}
+
+.features .cardText h3 {
+    margin: 5px 0;
+}
+
+.features .cardText p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Scan */
+.scan{
+    padding: 4rem 8%;
+}
+
+.scan .card{
+    display: flex;
+    align-items: center;
+}
+
+.scan .card h1{
+    font-size: 15px;
+}
+
+.scan .card p{
+    font-size: 10px;
+
+}
+
+footer{
+    background-color: #4f6e52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    color: #fff;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer i{
+    color: #fff;
+}
+
+
+/* halaman Jenis */
+.trashHero{
+    background-image: url(../../img/bgTrash.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trashHero .cardTextHero{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 25px;
+    color: white;
+}
+
+.titleHero{
+    letter-spacing: 10px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+.taglineHero{
+    font-family: "Quicksand";
+    font-size: 48px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+
+.anorganik{
+    padding: 2rem 5%;
+}
+
+.anorganik .cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.anorganik .images{
+    width: 500px;
+}
+
+.anorganik .images img{
+    width: 100%;
+}
+
+.anorganik .cardText{
+    width: 500px;
+}
+
+.anorganik .cardText h3{
+    font-size: 60px;
+}
+
+.anorganik .cardText p{
+    font-size: 20px;
+}
+
+.organik{
+    padding: 2rem 5%;
+}
+
+.organik .cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.organik .images{
+    width: 500px;
+}
+
+.organik .images img{
+    width: 100%;
+}
+
+.organik .cardText{
+    width: 500px;
+}
+
+.organik .cardText h3{
+    font-size: 60px;
+}
+
+.organik .cardText p{
+    font-size: 20px;
+}
+
+.anorganik2 .cardContent {
+    flex-wrap: wrap-reverse !important;
+}
+
+/* Danger */
+.danger{
+    padding: 2rem 2%;
+    text-align: center;
+}
+
+.danger h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.danger .dangerContent img{
+    width: 100%;
+}
+
+/* gallery */
+.gallery{
+    padding: 2rem 5%;
+    background-color: lightgray;
+    margin-top: 50px;
+}
+
+.gallery h3{
+    font-size: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.galleryContent .card{
+    width: 350px;
+}
+
+.galleryContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.gallery .images,
+.gallery .images img{
+    width: 100%;
+}
+
+/* laporan */
+.trashDetails{
+    margin: 100px 0;
+    padding: 1rem 5%;
+}
+
+
+.trashDetails .card{
+    display: flex;
+    margin-top: 40px;
+}
+
+.trashDetails h3{
+    font-size: 30px;
+}
+
+
+.trashDetails .images{
+    width: 500px;
+    margin-right: 30px;
+}
+
+.trashDetails img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.trashDetails .cardText{
+    width: 700px;
+}
+
+.trashDetails .cardText p{
+    margin:10px 0;
+}
+
+.trashDetails button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+}
+
+
+.trashDetails ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: gray;
+}
+
+/* Lapooran */
+.lapor{
+    padding: 2rem 5%;
+}
+
+
+.lapor h3{
+    text-align: center;
+}
+
+.lapor .topLapor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.lapor .topLapor button{
+    padding: 50px 60px;
+    border: none;
+    margin-right: 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #4f6e52;
+}
+
+/* tentang */
+.formLaporan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 50px 0;
+}
+
+.formLaporan .cards{
+    width: 800px;
+    background: linear-gradient(rgba(79, 111, 82, 0.9), #A8CD9F);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.formLaporan .col2{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.formLaporan .col2 .card{
+    width: 50%;
+    margin: 5px;
+}
+
+.formLaporan input{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.formLaporan textarea{
+    width: 100%;
+    height: 200px;
+}
+
+
+.formLaporan button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 15px;
+}
+
+/* Form Register */
+.main_register{
+    display: flex;
+    
+    padding: 5px 30px;
+    margin: 15px 80px;
+}
+
+.right-content{
+    flex: 5;
+    background: linear-gradient(#4F6F52, #A8CD9F);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 500px; 
+    margin: 0 60px; /* Center the form */
+}
+
+.right-content p{
+    text-align: center;
+    margin: 5px;
+    padding: 4px;
+}
+
+.right-content p a{
+   text-decoration: underline;
+   color: #3F18D8;
+}
+
+.image-animation {
+    height: 400px;
+    width: 400px;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    /* Tambahkan margin untuk menggeser gambar */
+    margin-left: 20px; /* Geser gambar ke kanan */
+    margin-right: 50px; 
+}
+
+.left-content {
+    flex: 4;
+    display: flex;
+    justify-content: center; /* Mengatur gambar di tengah */
+    margin: auto;
+}
+
+#register{
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: block;
+    width: 50%;
+    padding: 12px;
+    cursor: pointer;
+    margin: 16px auto 0; 
+    align-items: center;
+    text-align: center; 
+}
+
+#register:hover {
+    font-weight: 400;
+    transition: .5s ease-in-out;
+}
+
+.right-content > h2{
+    text-align: center;
+}
+
+.right-content > form > .input{
+    margin: 8px 30px;
+}
+
+.right-content > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 0 auto; 
+    margin-block-end: 1rem;
+}
+
+.input label{
+    font-size: 20px;
+}
+/* End register */
+
+/* Button Navbar Register */
+.buttonRegister {
+    display: flex;
+    justify-content: center; /* Menyelaraskan tombol di tengah */
+    gap: 20px; /* Jarak antara tombol */
+}
+
+.buttonRegister .iconBtn{
+    position: absolute;
+    bottom: 29px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+    width: 90px; /* Lebar tombol */
+    height: 35px; /* Tinggi tombol */
+    text-align: center;
+}
+/* End button navbar register */
+
+.footerRegister{
+    position: absolute;
+}
+
+/* Login Start */
+.main_login{
+    display: flex;
+    
+    padding: 15px 30px;
+    margin: 29px 80px;
+    /* background-color: red; */
+}
+
+.right-content-Login{
+    flex: 5;
+    background: linear-gradient(#4F6F52, #A8CD9F);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 500px; 
+    margin: 0 60px; /* Center the form */
+}
+
+.right-content-Login p{
+    text-align: center;
+    margin: 5px;
+    padding: 4px;
+}
+
+.right-content-Login p a{
+   text-decoration: underline;
+   color: #3F18D8;
+}
+
+.image-animation {
+    height: 400px;
+    width: 400px;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    /* Tambahkan margin untuk menggeser gambar */
+    margin-left: 20px; /* Geser gambar ke kanan */
+    margin-right: 50px; 
+}
+
+.left-content {
+    flex: 4;
+    display: flex;
+    justify-content: center; /* Mengatur gambar di tengah */
+}
+#login{
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: block;
+    width: 50%;
+    padding: 12px;
+    cursor: pointer;
+    margin: 16px auto 0; 
+    align-items: center;
+    text-align: center; 
+    /* background-color: #3F18D8; */
+}
+
+#login:hover {
+    font-weight: 400;
+    transition: .5s ease-in-out;
+}
+.right-content-Login > h2{
+    text-align: center;
+    /* background-color: tomato; */
+    margin-top: 10px;
+    padding: 10px;
+    font: 28px;
+}
+
+.right-content-Login > form > .input{
+    margin: 8px 30px;
+}
+
+.right-content-Login > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 25px auto; 
+    margin-block-end: 2rem;
+    /* background-color: yellow; */
+}
+
+.input label{
+    font-size: 20px;
+}
+
+.footerLogin{
+    position: absolute;
+}
+
+.input .iconUserLogin{
+    position: absolute;
+    right: 235px;
+    top: 258px;
+
+    height: 30px;
+    width: 30px;
+}
+
+.input .iconUserPassword{
+    position: absolute;
+    right: 235px;
+    top: 334px;
+
+    height: 30px;
+    width: 30px;
+}
+/* Login End */
+
+/* Proof Upload Start */
+.ProofUpload {
+    padding: 20px;
+}
+
+.uploadDetails {
+    margin-bottom: 30px;
+}
+
+.uploadCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+
+    /* background-color: red; */
+}
+
+.uploadCard .imagesUpload img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+
+.uploadCard .uploadCardText {
+    padding: 20px;
+    flex-grow: 1;
+    position: relative;
+    text-align: justify;
+
+    /* background-color: red; */
+}
+
+.uploadCard .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.uploadCard .location {
+    margin: 0;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.2px;
+    -webkit-text-stroke-color: #264e36;
+    font-size: 20px;
+    /* background-color: red; */
+}
+
+.thankYouSection {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.thankYouSection h1 {
+    margin-top: 0;
+    color: #264e36;
+}
+
+.uploadContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.uploadBox {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.uploadDeskripsi {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    resize: none;
+}
+
+.thankYouSection button {
+    background-color: #4f6e52;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Proof Upload End */
+
+/* Tentang Kami */
+.team{
+    padding: 2rem 5%;
+}
+
+.team .title h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+.team .ourTeam{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.team .ourTeam .card{
+    width: 350px;
+    text-align: justify;
+    border: 1px solid gray;
+}
+
+.team .ourTeam .cardText{
+    padding: 10px;
+}
+
+.team .ourTeam .card img{
+    width: 100%;
+}
+/* End Tentang Kami */
+
+/* visi */
+.visi{
+    padding: 2rem 5%;
+    }
+    
+.visiContent{
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.misi {
+    padding: 2rem 5%;
+}
+
+.misiContent{
+    background-color: lightgray;
+    padding: 20px 40px;
+    margin-top: 15px;
+}
+/* End Visi */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:460px) {
+    .navigation{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .sci{
+        display: none;
+    }
+
+    .penyuluhanContent{
+        flex-wrap: wrap;
+    }
+        
+    .penyuluhan{
+        color: #fff;
+        padding: 2rem 2%;
+    }
+
+    .penyuluhan .title{
+        text-align: center;
+        color: black;
+    }
+
+    .penyuluhan .title h3{
+        font-size: 30px;
+    }
+
+    .penyuluhanContent .coll1{
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+
+
+    .penyuluhanContent .coll1 img{
+        width: 100% !important;
+    }
+
+    .penyuluhanContent .coll2{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .penyuluhanContent .coll1 img,
+    .penyuluhanContent .coll2 img{
+        width: 100% !important;
+        border-radius: 20px;
+    }
+
+    .penyuluhanContent .coll2 .card2{
+        margin-top: 30px;
+    }
+
+    /* Trash */
+    .trash{
+        padding: 2rem 10%;
+    }
+
+    .trash .title h3{
+        font-size: 30px;
+    }
+
+    .trashContent{
+        flex-wrap: wrap;
+    }
+
+    .trash .card{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .trash .trashContent h3{
+        margin: 5px 0;
+    }
+
+    .trash .trashContent img{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .trash button{
+        margin-left: 0 !important;
+    }
+
+    
+    /* Recyle */
+
+    .recyle .cardContent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    /* Features */
+
+    .featuresContent{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .features .card{
+        width: 100% !important;
+        margin-top: 30px;
+    }
+    
+    footer{
+        flex-wrap: wrap;
+    }
+
+    footer .card{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    /* Halaman Jenis */
+    .anorganik{
+        padding: 2rem 5%;
+    }
+
+    .anorganik .cardContent{
+        flex-wrap: wrap;
+    }
+
+    .anorganik2 .cardContent {
+        flex-wrap: wrap-reverse !important;
+    }
+
+ 
+    /* Danger */
+    .danger{
+        padding: 2rem 2%;
+        text-align: center;
+    }
+
+    .danger h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .danger .dangerContent img{
+        width: 100%;
+    }
+
+    .galleryContent{
+        flex-wrap: wrap;
+    }
+
+    .galleryContent .card{
+        width: 100%;
+    }
+
+    .galleryContent .card img{
+        width: 100%;
+    }
+
+    /* Laporan */
+    .trashDetails .card{
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .trashDetails{
+        margin: 30px 0;
+    }
+
+    .trashDetails .images{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .trashDetails h3{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .lapor .topLapor button{
+        padding: 30px 40px;
+        border: none;
+        margin-right: 20px;
+        border-radius: 10px;
+        font-size: 30px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    /* Penyuluhan */
+.penyuluhanContent{
+    display: flex;
+    background-color: #4f6e52;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.penyuluhan{
+    color: #fff;
+    padding: 2rem 10%;
+}
+
+.penyuluhan .title{
+    text-align: center;
+    color: black;
+}
+
+.penyuluhan .title h3{
+    font-size: 30px;
+}
+
+.penyuluhanContent .coll1{
+    margin-right: 30px;
+    width: 50%;
+}
+
+.penyuluhanContent .coll2{
+    width: 50%;
+}
+
+.penyuluhanContent .coll1 img,
+.penyuluhanContent .coll2 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.penyuluhanContent .coll2 .card2{
+    margin-top: 30px;
+}
+
+.penyuluhanContent h4{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.penyuluhanContent p{
+    font-size: 12px;
+}
+
+/* Trash */
+.trash{
+    padding: 2rem 10%;
+}
+
+.trash .title h3{
+    font-size: 30px;
+}
+
+.trashContent{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.trash button{
+    margin-left: 50px;
+}
+
+
+/* Features */
+.features{
+    padding: 2rem 10%;
+}
+
+.features .title h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.featuresContent{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.features .card{
+    width: 200px;
+}
+
+
+.galleryContent .card{
+    width: 350px;
+}
+
+.galleryContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.gallery .images,
+.gallery .images img{
+    width: 100%;
+}
+
+}
