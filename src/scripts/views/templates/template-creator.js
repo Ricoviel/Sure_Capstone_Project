@@ -50,7 +50,7 @@ const createTrashDetail = (trash) => `
                 <h3>${trash.title}</h3>
                 <p>${trash.description}</p>
                 <p><strong>Saya ingin membersihkan tempat ini</strong></p>
-                <button><a href="#/ProofUpload">Kerjakan</a></button>
+                <button><a href="#/Proofupload">Kerjakan</a></button>
             </div>
         </div>
 `;

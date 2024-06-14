@@ -785,7 +785,7 @@ footer i{
 .main_register{
     display: flex;
     
-    padding: 5px 30px;
+    padding: 2.84% 30px;
     margin: 15px 80px;
 }
 
@@ -911,8 +911,8 @@ footer i{
 /* Login Start */
 .main_login{
     display: flex;
-    
-    padding: 15px 30px;
+
+    padding: 4.4% 30px;
     margin: 29px 80px;
     /* background-color: red; */
 }
@@ -1009,7 +1009,7 @@ footer i{
 .input .iconUserLogin{
     position: absolute;
     right: 235px;
-    top: 258px;
+    top: 308px;
 
     height: 30px;
     width: 30px;
@@ -1018,7 +1018,7 @@ footer i{
 .input .iconUserPassword{
     position: absolute;
     right: 235px;
-    top: 334px;
+    top: 384px;
 
     height: 30px;
     width: 30px;

@@ -1,13 +1,9 @@
-import SureDBSource from '../../data/sure-source';
-import { createProofUpload } from '../templates/template-creator';
-import UrlParser from '../../routes/url-parser';
-
 const ProofUpload = {
   async render() {
     return `
     <section id="ProofUpload" class="ProofUpload">
         <section id="uploadDetails" class="uploadDetails">
-            
+            <h2> Halo selamat datang </h2>
         </section>
         
         <section class="thankYouSection">
@@ -22,15 +18,17 @@ const ProofUpload = {
             <button>Unggah pembersihan</button>
         </section>
     </section>
-
-        `;
+`;
   },
 
   async afterRender() {
     // fungsi untuk manggil API
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    console.log('hasil url: ', url);
+
     const getListEksplore = await SureDBSource.trashList();
     console.log(getListEksplore);
-    const EksploreContainer = document.querySelector('#ProofUpload');
+    const EksploreContainer = document.querySelector('#uploadDetails');
     getListEksplore.forEach((trash) => {
       EksploreContainer.innerHTML += createProofUpload(trash);
     });
