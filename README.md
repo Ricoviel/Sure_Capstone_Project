@@ -9,11 +9,11 @@
 - upload ✅
 - Menu tambahan (sampah bersih) ✅
 - Revisi Dropdown ✅
+- Mengambil API ✅
+- Integrasi dengan BackEnd ✅
 
 Tugas Belum Selesai
 ==
 - Halaman admin ❌
 - Menggunakan NodeJS ❌
-- Integrasi dengan BackEnd ❌
-- Mengambil API ❌
 - dl... ❌
