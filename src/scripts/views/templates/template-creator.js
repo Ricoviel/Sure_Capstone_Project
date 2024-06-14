@@ -56,10 +56,6 @@ const createTrashDetail = (trash) => `
 `;
 
 const createTrashHasil = (trash) => `
-        <div class="teksTitle">
-            <h3>Sampah yang Sudah di Bersihkan</h3>
-        </div>
-
         <div class="hasilContent">
             <a href="/#/finished/${trash.id}">
                 <div class="cardResult">

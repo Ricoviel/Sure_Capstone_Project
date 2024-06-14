@@ -5,8 +5,11 @@ import UrlParser from '../../routes/url-parser';
 const Hasil = {
   async render() {
     return `
+    <div class="teksTitle">
+         <h3>Sampah yang Sudah di Bersihkan</h3>
+    </div>
     <section id="hasil" class="hasil">
-
+      
     </section>
 
     <section class="scan">

@@ -312,7 +312,7 @@ span{
 .homeTrash{
     padding: 2rem 10%;
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
     align-items: flex-start;
     flex-flow: row wrap;
 }
@@ -1186,25 +1186,33 @@ footer i{
 .hasil {
     padding: 2rem 2%;
     background-color: #f4f4f4;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
 }
 
-.hasil .teksTitle {
+.teksTitle {
     text-align: center;
-    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
 }
 
-.hasil .teksTitle h3 {
+.teksTitle h3 {
     font-size: 28px;
     color: #4F6F52;
     text-transform: uppercase;
 }
+
 
 /* CSS untuk bagian .hasilContent */
 .hasilContent {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .hasilContent a {
