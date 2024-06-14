@@ -10,11 +10,42 @@
     <title>Home</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./img/favicon/favicon.png">
+    <link rel="icon" href="./favicon.png">
 </head>
 <body>
     <!-- header -->
-     <header-bar></header-bar>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h3>Trash <span>Finder</span></h3>
+            </div>
+
+            <div class="navigation">
+                <ul>
+                    <li><a href="#/home">Beranda</a></li>
+                    <li><a href="#/eksplorasi">Eksplorasi</a></li>
+                    <li><a href="#/jenis">Jenis</a></li>
+                    <li><a href="#/hasil">Hasil</a></li>
+                    <li><a href="#/laporan">Laporan</a></li>
+                    <li><a href="#/aboutus">Tentang Kami</a></li>
+                </ul>
+            </div>
+
+            <div class="sci">
+                <a href="#" id="user-icon"><i class="fa fa-user"></i></a>
+                <div class="dropdown" id="user-dropdown">
+                    <a href="#/register">Register</a>
+                    <a href="#/login">Login</a>
+                </div>
+            </div>
+
+            <div class="burger">
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </div>
+        </div>
+    </header>
 
     <div class="sidebar">
         <ul>
@@ -26,144 +57,28 @@
                     <li><a href="AboutUs.html">Tentang Kami</a></li>
         </ul>
     </div>
-
-    <section class="hero">
-        <div class="heroWrapper swiper mySwiper">
-            <div class="cardWrapper swiper-wrapper">
-                <div class="card card1 swiper-slide">
-                    <div class="heroText">
-                        <h1>Kolaborasi</h1>
-                        <p>Unggah lokasi <br> sampah yang kamu <br> ketahui</p>
-                    </div>
-                </div>
-                <div class="card card2 swiper-slide">
-                    <div class="heroText">
-                        <h1>Kontribusi</h1>
-                        <p>Bersihkan sampah <br> dan ajak teman kamu </p>
-                    </div>
-                </div>
-                <div class="card card3 swiper-slide">
-                    <div class="heroText">
-                        <h1>Eksplorasi</h1>
-                        <p>Ketahuilah, banyak <br> lingkungan tercemar <br> di luar sana</p>
-                    </div>
-                </div>
-            </div>
-            <!-- tombol navigasi -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
-
-    <!-- Bagian penyuluhan -->
-    <section class="penyuluhan">
-        <div class="title">
-            <h3>Aksi Penyuluhan</h3>
-        </div>
-
-        <div class="penyuluhanContent">
-            <div class="coll1">
-                <div class="images">
-                    <img src="./img/bigImg.png" alt="">
-                </div>
-                <div class="cardText">
-                    <h4>Membersihkan selokan di ciseeng</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quo tempore, ipsa hic ratione cupiditate!</p>
-                </div>
-            </div>
-            <div class="coll2">
-                <div class="card">
-                    <div class="images">
-                        <img src="./img/smallImg.png" alt="">
-                    </div>
-                    <div class="cardText">
-                        <h4>Membersihkan selokan di ciseeng</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quo tempore, ipsa hic ratione cupiditate!</p>
-                    </div>
-                </div>
-                <div class="card card2">
-                    <div class="images">
-                        <img src="./img/smallImg.png" alt="">
-                    </div>
-                    <div class="cardText">
-                        <h4>Membersihkan selokan di ciseeng</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quo tempore, ipsa hic ratione cupiditate!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bagian sampah -->
-    <section class="trash">
-        <div class="title">
-            <h3>Sampah yang perlu di bersihkan</h3>
-        </div>
-
-        <div class="trashContent">
-            <a href="detail.html">
-                <div class="card">
-                    <div class="images">
-                        <img src="./img/sampah1.jpeg" alt="">
-                    </div>
-                    <div class="cardText">
-                        <p>Bogor</p>
-                        <h3>Penyumbatan Saluran Air</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore officiis at fugiat nisi sit neque.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="detail.html">
-                <div class="card">
-                    <div class="images">
-                        <img src="./img/sampah2.jpg" alt="">
-                    </div>
-                    <div class="cardText">
-                        <p>Bogor</p>
-                        <h3>Penyumbatan Saluran Air</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore officiis at fugiat nisi sit neque.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="detail.html">
-                <div class="card">
-                    <div class="images">
-                        <img src="./img/sampah3.jpg" alt="">
-                    </div>
-                    <div class="cardText">
-                        <p>Bogor</p>
-                        <h3>Penyumbatan Saluran Air</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore officiis at fugiat nisi sit neque.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="detail.html">
-                <div class="card">
-                    <div class="images">
-                        <img src="./img/sampah4.jpeg" alt="">
-                    </div>
-                    <div class="cardText">
-                        <p>Bogor</p>
-                        <h3>Penyumbatan Saluran Air</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore officiis at fugiat nisi sit neque.</p>
-                    </div>
-                </div>
-            </a>
-            
-        </div>
-        <button>Lihat Semua</button>
-    </section>
-
-    <recycle-bar> </recycle-bar>
-
-    <feature-bar> </feature-bar>
-
-    <donasi-bar> </donasi-bar>
         
-    <footer-bar></footer-bar>
+    <main id="mainContent">
 
-    <script type="module" src="carousel.js"></script>
-    <script type="module" src="./src/script/index.js"></script>
+    </main>
+
+    <footer>
+        <div class="card">
+            <h4>Copyright @2024 | Sure Trashfinder</h4>
+        </div>
+
+        <div class="card">
+            <ul>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- <script type="module" src="carousel.js"></script> -->
+    <!-- <script type="module" src="./src/script/index.js"></script> -->
     
 </body>
 </html>
