@@ -44,14 +44,16 @@ header i{
 .sci a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .dropdown {
     display: none;
     position: absolute;
-    top: 30px;
-    left: -50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    top: 27px;
+    left: -46px;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 2;
@@ -60,13 +62,14 @@ header i{
 
 .dropdown a {
     color: black;
-    padding: 12px 16px;
+    padding: 6px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown a:hover {
     background-color: #ddd;
+    border-radius: 8px;
 }
 
 
@@ -111,7 +114,7 @@ span{
 }
 
 .hero .card1{
-    background-image: url(../../img/carousel/carousel1.png);
+    background-image: url(../public/images/carousel/carousel1.png);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +125,7 @@ span{
 }
 
 .hero .card2{
-    background-image: url(../../img/carousel/carousel2.png);
+    background-image: url(../public/images/carousel/carousel2.png);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +136,7 @@ span{
 }
 
 .hero .card3{
-    background-image: url(../../img/carousel/carousel3.png);
+    background-image: url(../public/images/carousel/carousel3.png);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -237,41 +240,44 @@ span{
 }
 
 /* Trash */
-.trash{
+.trashTitle{
     padding: 2rem 10%;
+    font-size: 30px
 }
 
-.trash .title h3{
-    font-size: 30px;
+.trash{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 2rem;
+    align-items: left;
+    flex-flow: row wrap;
 }
 
 .trashContent{
-    margin-top: 20px;
+    margin: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
+    text-align: justify;
 }
 
-.trash .images img {
+.trashContent img {
     border-radius: 10px;
     width: 100%; /* Pastikan gambar memenuhi lebar kontainer */
     height: 140px; /* Biarkan tinggi menyesuaikan agar gambar tidak terdistorsi */
     max-height: 200px; /* Batasi tinggi maksimal gambar */
-    max-width: 100%; /* Batasi lebar maksimal gambar */
+    max-width: 100%; /* Batasi lebar maksimal gambar */ 
 }
 
-.trash .card{
-    width: 250px;
+.trashContent .card{
+    width: 350px;
 }
 
 .trash .trashContent h3{
     margin: 5px 0;
-}
-
-.trash .trashContent img{
-    border-radius: 10px;
 }
 
 .trash button{
@@ -281,6 +287,88 @@ span{
     border: none;
     cursor: pointer;
 }
+
+.trashContent .card .cardText p:last-child {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    /* Memotong teks yang terlalu panjang dengan elipsis */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px; /* Sesuaikan tinggi agar sesuai dengan jumlah baris yang diinginkan */
+    text-align: justify;
+}
+
+/* Trash Home Display */
+.homeTrashTitle{
+    padding: 0rem 10%;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.homeTrash{
+    padding: 2rem 10%;
+    display: flex;
+    gap: 5rem;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.trashHomeDisplay{
+    /* margin: 20px; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    border-radius: 10px;
+}
+
+.trashHomeDisplay img {
+    border-radius: 10px;
+    width: 100%; /* Pastikan gambar memenuhi lebar kontainer */
+    height: 140px; /* Biarkan tinggi menyesuaikan agar gambar tidak terdistorsi */
+    max-height: 200px; /* Batasi tinggi maksimal gambar */
+    max-width: 100%; /* Batasi lebar maksimal gambar */ 
+}
+
+.trashHomeDisplay .homeCardTrash{
+    width: 250px;
+}
+
+.homeTrash .trashHomeDisplay h3{
+    margin: 5px 0;
+    font-size: 15.3px;
+}
+
+.HomeTrashButton{
+    padding: 2rem 10%;
+}
+
+.HomeTrashButton button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.trashHomeDisplay .homeCardTrash .cardTextHomeDisplay p:last-child {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    /* Memotong teks yang terlalu panjang dengan elipsis */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px; /* Sesuaikan tinggi agar sesuai dengan jumlah baris yang diinginkan */
+    text-align: justify;
+}
+/* End Trash Home Display */
 
 /* Recyle */
 .recyle{
@@ -432,7 +520,7 @@ footer i{
 
 /* halaman Jenis */
 .trashHero{
-    background-image: url(../../img/bgTrash.png);
+    background-image: url(../public/assets/bgTrash.png);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -572,13 +660,14 @@ footer i{
 /* laporan */
 .trashDetails{
     margin: 100px 0;
+    margin-top: 75px;
     padding: 1rem 5%;
 }
 
 
 .trashDetails .card{
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .trashDetails h3{
@@ -598,6 +687,7 @@ footer i{
 
 .trashDetails .cardText{
     width: 700px;
+    text-align: justify;
 }
 
 .trashDetails .cardText p{
@@ -695,7 +785,7 @@ footer i{
 .main_register{
     display: flex;
     
-    padding: 5px 30px;
+    padding: 2.84% 30px;
     margin: 15px 80px;
 }
 
@@ -821,8 +911,8 @@ footer i{
 /* Login Start */
 .main_login{
     display: flex;
-    
-    padding: 15px 30px;
+
+    padding: 4.4% 30px;
     margin: 29px 80px;
     /* background-color: red; */
 }
@@ -919,7 +1009,7 @@ footer i{
 .input .iconUserLogin{
     position: absolute;
     right: 235px;
-    top: 258px;
+    top: 308px;
 
     height: 30px;
     width: 30px;
@@ -928,7 +1018,7 @@ footer i{
 .input .iconUserPassword{
     position: absolute;
     right: 235px;
-    top: 334px;
+    top: 384px;
 
     height: 30px;
     width: 30px;
@@ -1091,6 +1181,106 @@ footer i{
     margin-top: 15px;
 }
 /* End Visi */
+
+/* Start Hasil */
+.hasil {
+    padding: 2rem 2%;
+    background-color: #f4f4f4;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.teksTitle {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.teksTitle h3 {
+    font-size: 28px;
+    color: #4F6F52;
+    text-transform: uppercase;
+}
+
+
+/* CSS untuk bagian .hasilContent */
+.hasilContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hasilContent a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hasilContent .cardResult {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.hasilContent .cardResult:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(79, 111, 82, 0.8);
+}
+
+/* CSS untuk bagian gambar .imagesResult */
+.hasilContent .cardResult .imagesResult {
+    width: 100%;
+    height: 150px; /* Atur tinggi yang sesuai untuk gambar */
+    overflow: hidden;
+}
+
+.hasilContent .cardResult .imagesResult img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* CSS untuk bagian teks .teksDesc */
+.hasilContent .cardResult .teksDesc {
+    padding: 15px;
+}
+
+.hasilContent .cardResult .teksDesc p:first-child {
+    font-size: 14px;
+    color: #777;
+}
+
+.hasilContent .cardResult .teksDesc h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.hasilContent .cardResult .teksDesc p:last-child {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    /* Memotong teks yang terlalu panjang dengan elipsis */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px; /* Sesuaikan tinggi agar sesuai dengan jumlah baris yang diinginkan */
+    text-align: justify;
+}
+/* End Hasil */
 
 
 
