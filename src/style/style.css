@@ -114,7 +114,7 @@ span{
 }
 
 .hero .card1{
-    background-image: url(../../img/carousel/carousel1.png);
+    background-image: url(../public/images/carousel/carousel1.png);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,7 +125,7 @@ span{
 }
 
 .hero .card2{
-    background-image: url(../../img/carousel/carousel2.png);
+    background-image: url(../public/images/carousel/carousel2.png);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,7 +136,7 @@ span{
 }
 
 .hero .card3{
-    background-image: url(../../img/carousel/carousel3.png);
+    background-image: url(../public/images/carousel/carousel3.png);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,41 +240,44 @@ span{
 }
 
 /* Trash */
-.trash{
+.trashTitle{
     padding: 2rem 10%;
+    font-size: 30px
 }
 
-.trash .title h3{
-    font-size: 30px;
+.trash{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 2rem;
+    align-items: left;
+    flex-flow: row wrap;
 }
 
 .trashContent{
-    margin-top: 20px;
+    margin: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
+    text-align: justify;
 }
 
-.trash .images img {
+.trashContent img {
     border-radius: 10px;
     width: 100%; /* Pastikan gambar memenuhi lebar kontainer */
     height: 140px; /* Biarkan tinggi menyesuaikan agar gambar tidak terdistorsi */
     max-height: 200px; /* Batasi tinggi maksimal gambar */
-    max-width: 100%; /* Batasi lebar maksimal gambar */
+    max-width: 100%; /* Batasi lebar maksimal gambar */ 
 }
 
-.trash .card{
-    width: 250px;
+.trashContent .card{
+    width: 350px;
 }
 
 .trash .trashContent h3{
     margin: 5px 0;
-}
-
-.trash .trashContent img{
-    border-radius: 10px;
 }
 
 .trash button{
@@ -284,6 +287,88 @@ span{
     border: none;
     cursor: pointer;
 }
+
+.trashContent .card .cardText p:last-child {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    /* Memotong teks yang terlalu panjang dengan elipsis */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px; /* Sesuaikan tinggi agar sesuai dengan jumlah baris yang diinginkan */
+    text-align: justify;
+}
+
+/* Trash Home Display */
+.homeTrashTitle{
+    padding: 0rem 10%;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.homeTrash{
+    padding: 2rem 10%;
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.trashHomeDisplay{
+    /* margin: 20px; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    border-radius: 10px;
+}
+
+.trashHomeDisplay img {
+    border-radius: 10px;
+    width: 100%; /* Pastikan gambar memenuhi lebar kontainer */
+    height: 140px; /* Biarkan tinggi menyesuaikan agar gambar tidak terdistorsi */
+    max-height: 200px; /* Batasi tinggi maksimal gambar */
+    max-width: 100%; /* Batasi lebar maksimal gambar */ 
+}
+
+.trashHomeDisplay .homeCardTrash{
+    width: 250px;
+}
+
+.homeTrash .trashHomeDisplay h3{
+    margin: 5px 0;
+    font-size: 15.3px;
+}
+
+.HomeTrashButton{
+    padding: 2rem 10%;
+}
+
+.HomeTrashButton button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.trashHomeDisplay .homeCardTrash .cardTextHomeDisplay p:last-child {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    /* Memotong teks yang terlalu panjang dengan elipsis */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px; /* Sesuaikan tinggi agar sesuai dengan jumlah baris yang diinginkan */
+    text-align: justify;
+}
+/* End Trash Home Display */
 
 /* Recyle */
 .recyle{
@@ -435,7 +520,7 @@ footer i{
 
 /* halaman Jenis */
 .trashHero{
-    background-image: url(../../img/bgTrash.png);
+    background-image: url(../public/assets/bgTrash.png);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -575,13 +660,14 @@ footer i{
 /* laporan */
 .trashDetails{
     margin: 100px 0;
+    margin-top: 75px;
     padding: 1rem 5%;
 }
 
 
 .trashDetails .card{
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .trashDetails h3{
@@ -601,6 +687,7 @@ footer i{
 
 .trashDetails .cardText{
     width: 700px;
+    text-align: justify;
 }
 
 .trashDetails .cardText p{
