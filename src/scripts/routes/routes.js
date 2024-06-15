@@ -6,9 +6,9 @@ import Hasil from '../views/pages/hasil';
 import AboutUs from '../views/pages/AbouUs';
 import Laporan from '../views/pages/laporan';
 import FinishedDetail from '../views/pages/finished-detail';
-import ProofUpload from '../views/pages/Proof-Upload';
 import Register from '../views/pages/register';
 import Login from '../views/pages/login';
+import ProofUpload from '../views/pages/ProofUpload';
 
 const routes = {
   '/': Home, // default page
@@ -20,7 +20,7 @@ const routes = {
   '/laporan': Laporan,
   '/aboutus': AboutUs,
   '/finished/:id': FinishedDetail,
-  '/Proofupload': ProofUpload,
+  '/proofupload/:id': ProofUpload,
   '/register': Register,
   '/login': Login,
 };

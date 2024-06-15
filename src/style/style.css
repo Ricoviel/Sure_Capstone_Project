@@ -39,6 +39,8 @@ header i{
 
 .sci {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .sci a {
@@ -47,17 +49,24 @@ header i{
     font-size: 18px;
 }
 
+#userFullName{
+    color: white;
+    margin-left: 15px;
+}
+
 .dropdown {
     display: none;
     position: absolute;
     border: 1px solid black;
     border-radius: 8px;
     top: 27px;
-    left: -46px;
+    left: -60px;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 2;
     flex-direction: row;
+    width: 150px;
+    padding-bottom: 20px;
 }
 
 .dropdown a {
@@ -65,6 +74,10 @@ header i{
     padding: 6px 16px;
     text-decoration: none;
     display: block;
+}
+
+.hiddenElement{
+    display: none;
 }
 
 .dropdown a:hover {
@@ -657,7 +670,7 @@ footer i{
     width: 100%;
 }
 
-/* laporan */
+/* Trash Detail */
 .trashDetails{
     margin: 100px 0;
     margin-top: 75px;
@@ -683,6 +696,7 @@ footer i{
 .trashDetails img{
     width: 100%;
     border-radius: 20px;
+    height: 300px;
 }
 
 .trashDetails .cardText{
@@ -699,6 +713,7 @@ footer i{
     border-radius: 30px;
     border: none;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 
@@ -764,6 +779,11 @@ footer i{
 }
 
 .formLaporan input{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.formLaporan .selectCities{
     width: 100%;
     padding: 10px 20px;
 }
@@ -1009,7 +1029,7 @@ footer i{
 .input .iconUserLogin{
     position: absolute;
     right: 235px;
-    top: 308px;
+    top: 293px;
 
     height: 30px;
     width: 30px;
@@ -1018,7 +1038,7 @@ footer i{
 .input .iconUserPassword{
     position: absolute;
     right: 235px;
-    top: 384px;
+    top: 369px;
 
     height: 30px;
     width: 30px;
@@ -1104,6 +1124,13 @@ footer i{
     font-size: 24px;
     color: #aaa;
     cursor: pointer;
+    overflow: hidden; /* Agar gambar tidak terlalu besar */
+}
+
+.uploadBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar sesuai dengan ukuran div */
 }
 
 .uploadDeskripsi {
@@ -1190,6 +1217,14 @@ footer i{
     display: flex;
     justify-content: space-around;
     align-items: left;
+}
+
+#hasil{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 40px;
 }
 
 .teksTitle {
@@ -1479,6 +1514,11 @@ footer i{
     .trashDetails .images{
         width: 100%;
         margin-right: 0;
+        height: 400px;
+    }
+
+    .trashDetails .images img{
+        height: 100%;
     }
 
     .trashDetails h3{
@@ -1517,6 +1557,13 @@ footer i{
     margin-top: 30px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+.recyle .cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .penyuluhan{
@@ -1561,6 +1608,8 @@ footer i{
     font-size: 12px;
 }
 
+
+
 /* Trash */
 .trash{
     padding: 2rem 10%;
@@ -1595,6 +1644,7 @@ footer i{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .features .card{

@@ -160,7 +160,16 @@ const Home = {
   },
 
   async afterRender() {
-    // fungsi untuk manggil API
+    // Ambil nama pengguna dari Local Storage
+    const fullName = localStorage.getItem('full_name');
+
+    // Tampilkan nama pengguna di elemen dengan id 'userFullName'
+    const userFullNameElement = document.getElementById('userFullName');
+    if (userFullNameElement) {
+      userFullNameElement.textContent = fullName || 'Guest'; // Default ke 'Guest' jika tidak ada nama pengguna
+    }
+
+    // Fungsi untuk manggil API
     const getListEksplore = await SureDBSource.trashList();
     console.log(getListEksplore);
 

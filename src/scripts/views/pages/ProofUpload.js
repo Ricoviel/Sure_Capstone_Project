@@ -1,79 +1,52 @@
 import SureDBSource from '../../data/sure-source';
+import { createProofUpload } from '../templates/template-creator';
 import UrlParser from '../../routes/url-parser';
 
-const Laporan = {
+const ProofUpload = {
   async render() {
     return `
-    <section class="lapor">
-        <h3>Laporkan sampah di sekitar mu</h3>
-
-         <div class="topLapor">
-            <input type="file" id="fileInput1" style="display:none;">
-            <div class="uploadBox" id="uploadBox1">+</div>
+    <section class="ProofUpload">
+        <section id="uploadDetails" class="uploadDetails">
+            
+        </section>
         
-            <input type="file" id="fileInput2" style="display:none;">
-            <div class="uploadBox" id="uploadBox2">+</div>
-        
-            <input type="file" id="fileInput3" style="display:none;">
-            <div class="uploadBox" id="uploadBox3">+</div>
-        </div>
+        <section class="thankYouSection">
+            <h1>Terimakasih!!</h1>
+            <p>Atas partisipasi kamu dalam menjaga kebersihan lingkungan! Bumi mengapresiasi segala usaha kamu, mari melanjutkan berbuat baik ke bumi yang kita tinggali. Selanjutnya tolong unggah foto lokasi sampah yang telah kamu bersihkan, pastikan foto memiliki angle yang sama dari pengunggah yaa...</p>
+            <div class="uploadContainer">
+                <input type="file" id="fileInput1" style="display:none;">
+                <div class="uploadBox" id="uploadBox1">+</div>
+            
+                <input type="file" id="fileInput2" style="display:none;">
+                <div class="uploadBox" id="uploadBox2">+</div>
+            
+                <input type="file" id="fileInput3" style="display:none;">
+                <div class="uploadBox" id="uploadBox3">+</div>
+            </div>
+            <textarea placeholder="Deskripsikan kegiatan kamu barusan" id="description" class="uploadDeskripsi"></textarea>
+            <button id="uploadButton">Unggah pembersihan</button>
+        </section>
     </section>
-
-    <section class="formLaporan">
-        <div class="cards">
-            <form id="trashReportForm">
-                <label for="title">Apa sampah yang kamu temukan</label>
-                <br>
-                <input type="text" id="title">
-                <br>
-                <div class="col2">
-                    <div class="card" id="wilayah">
-                        <label for="wilayah">Wilayah</label>
-                        <br>
-                        <select name="wilayah" id="selectCities" class="selectCities">
-                                
-                        </select>
-                    </div>
-                    <div class="card">
-                        <label for="locationUrl">Titik Lokasi</label>
-                        <br>
-                        <input type="text" id="locationUrl">
-                    </div>
-                </div>
-                <br>
-                <label for="address">Alamat lengkap</label>
-                <br>
-                <input type="text" id="address">
-                <br>
-                <br>
-                <label for="description">Deskripsikan Sampahnya</label>
-                <br>
-                <textarea id="description"></textarea>
-            </form>
-        <button id="uploadButton">Submit</button>
-        </div>
-    </section>
-      `;
+    `;
   },
   async afterRender() {
-    const getCities = await SureDBSource.cityList();
-    console.log(getCities);
-    const citySelector = document.getElementById('selectCities');
+    try {
+      // Fungsi untuk memanggil API
+      const url = UrlParser.parseActiveUrlWithoutCombiner();
+      console.log('hasil url dari proof: ', url.id);
 
-    for (const city in getCities) {
-      const optgroup = document.createElement('optgroup');
-      optgroup.label = city;
+      const trash = await SureDBSource.detailTrash(url.id);
 
-      getCities[city].forEach((location) => {
-        const option = document.createElement('option');
-        option.value = location.id;
-        option.textContent = location.name;
-        optgroup.appendChild(option);
-      });
-
-      citySelector.appendChild(optgroup);
+      const EksploreContainer = document.querySelector('#uploadDetails');
+      if (EksploreContainer) {
+        EksploreContainer.innerHTML = createProofUpload(trash);
+      } else {
+        console.error('#uploadDetails element not found in DOM.');
+      }
+    } catch (error) {
+      console.error('Error fetching trash details:', error);
     }
-    // Event listeners for image upload boxes
+
     document.getElementById('uploadBox1').addEventListener('click', () => {
       document.getElementById('fileInput1').click();
     });
@@ -105,6 +78,7 @@ const Laporan = {
 
       if (file.size > 300 * 1024) { // 300 KB in bytes
         alert('Ukuran file tidak boleh lebih dari 300 KB');
+        // eslint-disable-next-line no-param-reassign
         event.target.value = ''; // Clear the input
         return;
       }
@@ -131,29 +105,15 @@ const Laporan = {
         return;
       }
 
-      // Ambil nilai dari form
-      const title = document.getElementById('title').value;
+      // Ambil pesan pengguna
       const description = document.getElementById('description').value;
-      const cityId = document.getElementById('selectCities').value;
-      const address = document.getElementById('address').value;
-      const locationUrl = document.getElementById('locationUrl').value;
-
-      // Validasi input tidak boleh kosong
-      if (!title || !description || !cityId || !address || !locationUrl) {
-        alert('Semua bidang harus diisi');
-        return;
-      }
 
       // Buat FormData untuk mengirim data ke backend
       const formData = new FormData();
-      formData.append('title', title);
-      formData.append('description', description);
-      formData.append('city_id', cityId);
-      formData.append('address', address);
-      formData.append('location_url', locationUrl);
-      if (foto1) formData.append('gambar1', foto1);
-      if (foto2) formData.append('gambar2', foto2);
-      if (foto3) formData.append('gambar3', foto3);
+      formData.append('user_message', description);
+      formData.append('gambar1', foto1);
+      formData.append('gambar2', foto2);
+      formData.append('gambar3', foto3);
 
       // Get the valid trash_id from the URL
       const url = UrlParser.parseActiveUrlWithoutCombiner();
@@ -163,7 +123,7 @@ const Laporan = {
       try {
         const token = localStorage.getItem('token');
         console.log('Data Token:', token);
-        const response = await fetch('https://sure-api.riandev.xyz/trash', {
+        const response = await fetch(`https://sure-api.riandev.xyz/trash/proof/${trashId}`, {
           method: 'POST',
           headers: {
             Authorization: `Bearer ${token}`,
@@ -188,4 +148,4 @@ const Laporan = {
   },
 };
 
-export default Laporan;
+export default ProofUpload;

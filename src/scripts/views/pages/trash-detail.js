@@ -12,12 +12,20 @@ const TrashDetail = {
   },
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
-    console.log('hasil url: ', url);
     // fungsi untuk manggil API
     const getDetail = await SureDBSource.detailTrash(url.id);
     console.log('data:', getDetail);
     const DetailContainer = document.querySelector('#trashDetails');
     DetailContainer.innerHTML = createTrashDetail(getDetail);
+
+    document.getElementById('kerjakanButton').addEventListener('click', () => {
+      // Ambil nilai ID dari atribut data
+      const trashDetails = document.getElementById('detailWrap');
+      const id = trashDetails.getAttribute('data-id');
+      console.log('hasil dari trash-detail:', id);
+      // Redirect ke halaman proofupload dengan parameter ID
+      window.location.href = `#/proofupload/${id}`;
+    });
   },
 };
 

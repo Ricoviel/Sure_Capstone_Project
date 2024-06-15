@@ -37,22 +37,25 @@ const createSureEksplore = (trash) => `
 `;
 
 const createTrashDetail = (trash) => `
+    <section id="detailWrap" data-id="${trash.id}">
         <h3>Detail Sampah</h3>
         <div class="card">
             <div class="images">
                 <img src="${trash.pictures[0]}" alt="">
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i>Jakarta Selatan</li>
-                    <li>Seseorang</li>
+                    <li><i class="fas fa-map-marker-alt"></i> ${trash.city}</li>
+                    <li>${trash.uploader_name}</li>
                 </ul>
             </div>
             <div class="cardText">
                 <h3>${trash.title}</h3>
                 <p>${trash.description}</p>
+                <p>Jakarta</p>
                 <p><strong>Saya ingin membersihkan tempat ini</strong></p>
-                <button><a href="#/Proofupload">Kerjakan</a></button>
+                <button id="kerjakanButton">Kerjakan</button>
             </div>
         </div>
+    </section>
 `;
 
 const createTrashHasil = (trash) => `
@@ -93,7 +96,7 @@ const createFinishedDetail = (trash) => `
 const createProofUpload = (trash) => `
         <div class="uploadCard">
                 <div class="imagesUpload">
-                    <img src="${trash.pictures}" alt="">
+                    <img src="${trash.pictures[0]}" alt="">
                 </div>
                 <div class="uploadCardText">
                     <div class="header">
@@ -105,20 +108,6 @@ const createProofUpload = (trash) => `
         </div>
 `;
 
-// Fungsi untuk membuat tombol favorit
-const createFavoriteButton = () => `
-  <button aria-label="like this restaurant" id="likeButton" class="favorite_resto">
-    <i class="fa fa-heart-o" aria-hidden="true"></i>
-  </button>
-`;
-
-// Fungsi untuk membuat tombol sudah difavoritkan
-const createFavoritedButton = () => `
-  <button aria-label="unlike this restaurant" id="likedButton" class="favorite_resto">
-    <i class="fa fa-heart" aria-hidden="true"></i>
-  </button>
-`;
-
 export {
   createHomeTrash,
   createSureEksplore,
@@ -126,6 +115,4 @@ export {
   createFinishedDetail,
   createProofUpload,
   createTrashHasil,
-  createFavoriteButton,
-  createFavoritedButton,
 };
