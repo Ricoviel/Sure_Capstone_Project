@@ -9,13 +9,13 @@ const Laporan = {
 
          <div class="topLapor">
             <input type="file" id="fileInput1" style="display:none;">
-            <div class="uploadBox" id="uploadBox1">+</div>
+            <div class="uploadBoxLaporan" id="uploadBox1">+</div>
         
             <input type="file" id="fileInput2" style="display:none;">
-            <div class="uploadBox" id="uploadBox2">+</div>
+            <div class="uploadBoxLaporan" id="uploadBox2">+</div>
         
             <input type="file" id="fileInput3" style="display:none;">
-            <div class="uploadBox" id="uploadBox3">+</div>
+            <div class="uploadBoxLaporan" id="uploadBox3">+</div>
         </div>
     </section>
 

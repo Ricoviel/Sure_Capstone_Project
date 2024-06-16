@@ -49,8 +49,8 @@ const createTrashDetail = (trash) => `
             </div>
             <div class="cardText">
                 <h3>${trash.title}</h3>
-                <p>${trash.description}</p>
-                <p>Jakarta</p>
+                <p class="descriptionDetail">${trash.description}</p>
+                <p class="addressDetail"><i>Alamat: ${trash.address}</i></p>
                 <p><strong>Saya ingin membersihkan tempat ini</strong></p>
                 <button id="kerjakanButton">Kerjakan</button>
             </div>
