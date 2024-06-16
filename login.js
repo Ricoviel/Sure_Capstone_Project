@@ -26,7 +26,40 @@ const Login = {
         `;
   },
   async afterRender() {
-    // Fungsi ini dapat digunakan untuk melakukan manipulasi DOM setelah render, jika diperlukan.
+    const form = document.getElementById('formulir-Login');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const username = document.getElementById('inputLoginUsername').value;
+      const password = document.getElementById('inputLoginUserPassword').value;
+
+      try {
+        const response = await fetch('https://sure-api.riandev.xyz/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username, password }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          // Simpan token di localStorage
+          localStorage.setItem('token', data.token);
+          localStorage.setItem('full_name', data.full_name);
+
+          // Arahkan pengguna ke halaman utama
+          window.location.href = '#/home'; // Ganti dengan URL halaman utama Anda
+        } else {
+          throw new Error(data.message || 'Terjadi kesalahan saat login.');
+        }
+      } catch (error) {
+        alert(error.message);
+        console.error('Error saat login:', error);
+      }
+    });
   },
 };
 

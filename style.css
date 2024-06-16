@@ -67,6 +67,7 @@ header i{
     flex-direction: row;
     width: 150px;
     padding-bottom: 20px;
+    background-color: yellow;
 }
 
 .dropdown a {
@@ -850,7 +851,7 @@ footer i{
     margin: auto;
 }
 
-#register{
+.right-content #register{
     font-size: 14px;
     background-color: white;
     color: black;
@@ -865,7 +866,7 @@ footer i{
     text-align: center; 
 }
 
-#register:hover {
+.right-content #register:hover {
     font-weight: 400;
     transition: .5s ease-in-out;
 }
@@ -976,7 +977,7 @@ footer i{
     display: flex;
     justify-content: center; /* Mengatur gambar di tengah */
 }
-#login{
+.right-content-Login #login{
     font-size: 14px;
     background-color: white;
     color: black;
@@ -992,8 +993,8 @@ footer i{
     /* background-color: #3F18D8; */
 }
 
-#login:hover {
-    font-weight: 400;
+.right-content-Login #login:hover {
+    font-weight:bolder;
     transition: .5s ease-in-out;
 }
 .right-content-Login > h2{
@@ -1029,7 +1030,7 @@ footer i{
 .input .iconUserLogin{
     position: absolute;
     right: 235px;
-    top: 293px;
+    top: 308px;
 
     height: 30px;
     width: 30px;
@@ -1038,7 +1039,7 @@ footer i{
 .input .iconUserPassword{
     position: absolute;
     right: 235px;
-    top: 369px;
+    top: 384px;
 
     height: 30px;
     width: 30px;
