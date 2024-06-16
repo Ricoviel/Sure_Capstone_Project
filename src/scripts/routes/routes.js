@@ -9,6 +9,7 @@ import FinishedDetail from '../views/pages/finished-detail';
 import Register from '../views/pages/register';
 import Login from '../views/pages/login';
 import ProofUpload from '../views/pages/ProofUpload';
+import Verifiy from '../views/pages/verify-otp';
 
 const routes = {
   '/': Home, // default page
@@ -23,6 +24,7 @@ const routes = {
   '/proofupload/:id': ProofUpload,
   '/register': Register,
   '/login': Login,
+  '/verify-otp': Verifiy,
 };
 
 export default routes;
