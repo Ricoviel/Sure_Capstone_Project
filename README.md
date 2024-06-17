@@ -11,9 +11,12 @@
 - Revisi Dropdown ✅
 - Mengambil API ✅
 - Integrasi dengan BackEnd ✅
+- Halaman admin ✅
+- Verifikasi OTP ✅
+- Verifikasi gambar report dan proof ✅
+- Login ✅
+- Register ✅ 
 
 Tugas Belum Selesai
 ==
-- Halaman admin ❌
-- Menggunakan NodeJS ❌
-- dl... ❌
+- Responsive ❌
