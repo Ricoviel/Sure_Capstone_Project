@@ -75,6 +75,30 @@ const Jenis = {
                     <p><b>B3</b></p>
                 </div>
             </div>
+            <div class="card">
+                <div class="images">
+                    <img src="../assets/Rectangle 78.png" alt="">
+                </div>
+                <div class="cardText">
+                    <p><b>B3</b></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="images">
+                    <img src="../assets/Rectangle 78.png" alt="">
+                </div>
+                <div class="cardText">
+                    <p><b>B3</b></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="images">
+                    <img src="../assets/Rectangle 78.png" alt="">
+                </div>
+                <div class="cardText">
+                    <p><b>B3</b></p>
+                </div>
+            </div>
         </div>
     </section>
     `;

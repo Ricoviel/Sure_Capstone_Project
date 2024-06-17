@@ -629,7 +629,7 @@ footer i{
 
 /* Danger */
 .danger{
-    padding: 2rem 2%;
+    padding: 2rem 7.5%;
     text-align: center;
 }
 
@@ -638,21 +638,24 @@ footer i{
     margin-bottom: 10px;
 }
 
-.danger .dangerContent img{
-    width: 100%;
+.dangerContent .card img {
+    width: 100%; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Atur tinggi gambar sesuai kebutuhan */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
 }
 
 /* gallery */
 .gallery{
-    padding: 2rem 5%;
+    padding: 2rem 7.5%;
     background-color: lightgray;
     margin-top: 50px;
 }
 
 .gallery h3{
     font-size: 25px;
-    margin-left: 30px;
-    margin-right: 30px;
+    /* margin-left: 30px; */
+    /* margin-right: 30px; */
+    /* background-color: red; */
 }
 
 .galleryContent .card{
@@ -662,16 +665,18 @@ footer i{
 .galleryContent{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-between;
     margin-top: 20px;
     text-align: center;
     flex-wrap: wrap;
+    row-gap: 25px;
 }
 
 .gallery .images,
 .gallery .images img{
     width: 100%;
 }
+
 
 /* Trash Detail */
 .trashDetails{
