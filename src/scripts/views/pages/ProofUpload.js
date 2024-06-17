@@ -99,8 +99,14 @@ const ProofUpload = {
       const foto2 = document.getElementById('fileInput2').files[0];
       const foto3 = document.getElementById('fileInput3').files[0];
 
+      // Validasi jumlah gambar yang diunggah
+      if (!foto1 || !foto2 || !foto3) {
+        alert('Harap unggah 3 gambar sebelum mengirimkan.');
+        return;
+      }
+
       // Validasi ukuran gambar sebelum mengunggah
-      if ((foto1 && foto1.size > 300 * 1024) || (foto2 && foto2.size > 300 * 1024) || (foto3 && foto3.size > 300 * 1024)) {
+      if ((foto1.size > 300 * 1024) || (foto2.size > 300 * 1024) || (foto3.size > 300 * 1024)) {
         alert('Semua gambar harus berukuran maksimal 300 KB');
         return;
       }
@@ -123,6 +129,7 @@ const ProofUpload = {
       try {
         const token = localStorage.getItem('token');
         console.log('Data Token:', token);
+
         const response = await fetch(`https://sure-api.riandev.xyz/trash/proof/${trashId}`, {
           method: 'POST',
           headers: {

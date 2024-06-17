@@ -9,7 +9,7 @@ const Verifiy = {
                         <label for="inputUserEmail"></label>
                         <input id="inputUserEmail" name="nama" type="text" required placeholder="Email">
                     </div>
-                    <input id="inputverif" class="input" type="text" inputmode="numeric" maxlength="6" />
+                    <input id="inputverif" placeholder="Masukkan kode OTP" class="input" type="text" inputmode="numeric" maxlength="6" />
                     <br>
                     <button id="submit" type="submit">Submit</button>
               </form>

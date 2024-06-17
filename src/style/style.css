@@ -1354,6 +1354,80 @@ footer i{
 }
 /* End Hasil */
 
+/* Halaman Verifikasi */
+.login-otp{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    height: 76.4vh;
+}
+
+.wrap_otp h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.wrap_otp{
+  padding: 3rem 25%;
+}
+
+.wrap_otp #formulir-otp .input{
+    margin-bottom: 15px;
+}
+
+.wrap_otp #formulir-otp  input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.wrap_otp #formulir-otp input:focus{
+    border-color:#4F6F52;
+    outline: none;
+}
+
+.wrap_otp #formulir-otp button{
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 18px;
+    color: black;
+    background: #d3d3d3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.3s ease;
+}
+
+.wrap_otp #formulir-otp button:hover{
+    background-color:#b0b0b0;
+}
+
+/* END Halaman Verifikasi */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

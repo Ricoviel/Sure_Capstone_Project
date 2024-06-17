@@ -32,39 +32,32 @@ class App {
     userDropdown.innerHTML = '';
 
     if (!name) {
-      // Tambahkan elemen "Login" jika belum ada
-      if (!document.getElementById('login')) {
-        const loginElement = document.createElement('a');
-        loginElement.href = '#/login';
-        loginElement.id = 'login';
-        loginElement.textContent = 'Login';
-        userDropdown.appendChild(loginElement);
-      }
+      // Tambahkan elemen "Login" dan "Register" jika belum ada
+      const loginElement = document.createElement('a');
+      loginElement.href = '#/login';
+      loginElement.id = 'login';
+      loginElement.textContent = 'Login';
+      userDropdown.appendChild(loginElement);
 
-      // Tambahkan elemen "Register" jika belum ada
-      if (!document.getElementById('register')) {
-        const registerElement = document.createElement('a');
-        registerElement.href = '#/register';
-        registerElement.id = 'register';
-        registerElement.textContent = 'Register';
-        userDropdown.appendChild(registerElement);
-      }
+      const registerElement = document.createElement('a');
+      registerElement.href = '#/register';
+      registerElement.id = 'register';
+      registerElement.textContent = 'Register';
+      userDropdown.appendChild(registerElement);
     } else {
       // Tambahkan elemen "Logout" jika belum ada
-      if (!document.getElementById('logout')) {
-        const logoutElement = document.createElement('a');
-        logoutElement.href = '#/home';
-        logoutElement.id = 'logout';
-        logoutElement.textContent = 'Logout';
-        logoutElement.onclick = function (event) {
-          event.preventDefault(); // Mencegah aksi default dari link
-          localStorage.removeItem('token');
-          localStorage.removeItem('full_name');
-          location.reload(); // Reload halaman
-          alert('You have been logged out');
-        };
-        userDropdown.appendChild(logoutElement);
-      }
+      const logoutElement = document.createElement('a');
+      logoutElement.href = '#/home';
+      logoutElement.id = 'logout';
+      logoutElement.textContent = 'Logout';
+      logoutElement.onclick = function (event) {
+        event.preventDefault(); // Mencegah aksi default dari link
+        localStorage.removeItem('token');
+        localStorage.removeItem('full_name');
+        location.reload(); // Reload halaman
+        alert('You have been logged out');
+      };
+      userDropdown.appendChild(logoutElement);
     }
 
     this._content.innerHTML = await page.render();
