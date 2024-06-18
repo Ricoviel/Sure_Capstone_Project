@@ -21,10 +21,10 @@ const Laporan = {
 
     <section class="formLaporan">
         <div class="cards">
-            <form id="trashReportForm">
+            <form id="trashReportForm" spellcheck="false">
                 <label for="title">Apa sampah yang kamu temukan</label>
                 <br>
-                <input type="text" id="title">
+                <input type="text" id="title" placeholder="Sampah di Sungai Ciliwung">
                 <br>
                 <div class="col2">
                     <div class="card" id="wilayah">
@@ -37,13 +37,13 @@ const Laporan = {
                     <div class="card">
                         <label for="locationUrl">Titik Lokasi</label>
                         <br>
-                        <input type="text" id="locationUrl">
+                        <input type="text" id="locationUrl" placeholder="https://maps.app.goo.gl">
                     </div>
                 </div>
                 <br>
                 <label for="address">Alamat lengkap</label>
                 <br>
-                <input type="text" id="address">
+                <input type="text" id="address" placeholder="Jl.XXX No.XXX, RTXXX / XXX, Kel.XXX, Kec.XXX">
                 <br>
                 <br>
                 <label for="description">Deskripsikan Sampahnya</label>
@@ -124,13 +124,10 @@ const Laporan = {
       const foto1 = document.getElementById('fileInput1').files[0];
       const foto2 = document.getElementById('fileInput2').files[0];
       const foto3 = document.getElementById('fileInput3').files[0];
-
-      // Validasi ukuran gambar sebelum mengunggah
-      if ((foto1 && foto1.size > 300 * 1024) || (foto2 && foto2.size > 300 * 1024) || (foto3 && foto3.size > 300 * 1024)) {
-        alert('Semua gambar harus berukuran maksimal 300 KB');
+      if (!foto1 || !foto2 || !foto3) {
+        alert('Harap unggah 3 gambar sebelum mengirimkan.');
         return;
       }
-
       // Ambil nilai dari form
       const title = document.getElementById('title').value;
       const description = document.getElementById('description').value;

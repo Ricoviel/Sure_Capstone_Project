@@ -1,3 +1,4 @@
+import Swiper from 'swiper';
 import SureDBSource from '../../data/sure-source';
 import { createFinishedDetail } from '../templates/template-creator';
 import UrlParser from '../../routes/url-parser';
@@ -18,6 +19,22 @@ const FinishedDetail = {
     console.log('data:', GetFinishedDetail);
     const DetailFinishedContainer = document.querySelector('#trashDetails');
     DetailFinishedContainer.innerHTML = createFinishedDetail(GetFinishedDetail);
+    const initSwiper = () => {
+      // eslint-disable-next-line no-new
+      new Swiper('.mySwiper', {
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    };
+
+    initSwiper();
   },
 };
 

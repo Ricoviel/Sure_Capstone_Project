@@ -23,6 +23,7 @@ const ProofUpload = {
                 <input type="file" id="fileInput3" style="display:none;">
                 <div class="uploadBox" id="uploadBox3">+</div>
             </div>
+            <p>* Foto maksimal berukuran 300kb</p>
             <textarea placeholder="Deskripsikan kegiatan kamu barusan" id="description" class="uploadDeskripsi"></textarea>
             <button id="uploadButton">Unggah pembersihan</button>
         </section>
@@ -98,10 +99,15 @@ const ProofUpload = {
       const foto1 = document.getElementById('fileInput1').files[0];
       const foto2 = document.getElementById('fileInput2').files[0];
       const foto3 = document.getElementById('fileInput3').files[0];
-
+      const description = document.getElementById('description').value;
       // Validasi jumlah gambar yang diunggah
       if (!foto1 || !foto2 || !foto3) {
         alert('Harap unggah 3 gambar sebelum mengirimkan.');
+        return;
+      }
+
+      if (!description) {
+        alert('Harap masukan pesan deskripsi!');
         return;
       }
 
@@ -112,7 +118,6 @@ const ProofUpload = {
       }
 
       // Ambil pesan pengguna
-      const description = document.getElementById('description').value;
 
       // Buat FormData untuk mengirim data ke backend
       const formData = new FormData();

@@ -328,7 +328,7 @@ span{
 .homeTrash{
     padding: 2rem 10%;
     display: flex;
-    gap: 5rem;
+    gap: 5px;
     align-items: flex-start;
     flex-flow: row wrap;
 }
@@ -337,10 +337,13 @@ span{
     /* margin: 20px; */
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 20px;
     border-radius: 10px;
+    flex: 1;
+    min-width: 250px
+    /* background-color: red; */
 }
 
 .trashHomeDisplay img {
@@ -830,13 +833,12 @@ footer i{
 
 .formLaporan .col2{
     display: flex;
-    align-items: center;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .formLaporan .col2 .card{
-    width: 50%;
-    margin: 5px;
+    width: 100%;
 }
 
 .formLaporan input{
@@ -847,12 +849,16 @@ footer i{
 .formLaporan .selectCities{
     width: 100%;
     padding: 10px 10px;
+    font-family: 'poppins', sans-serif;
     /* background-color: red; */
 }
 
 .formLaporan textarea{
     width: 100%;
     height: 200px;
+    padding: 10px 20px;
+    font-family: 'poppins', sans-serif;
+    outline: none;
 }
 
 
@@ -1148,10 +1154,9 @@ footer i{
 
 .uploadCard .location {
     margin: 0;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1.2px;
-    -webkit-text-stroke-color: #264e36;
-    font-size: 20px;
+    color: black;
+    font-size: 15px;
+
     /* background-color: red; */
 }
 
