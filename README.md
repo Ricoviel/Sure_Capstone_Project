@@ -1,6 +1,10 @@
 # Installation
 
 ## Requirements
+- Eslint
+- Webpack
+- Swiper
+- Fontawesome
 
 
 
