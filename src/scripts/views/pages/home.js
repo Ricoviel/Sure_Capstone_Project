@@ -44,7 +44,7 @@ const Home = {
             <div class="penyuluhanContent">
                 <div class="coll1">
                     <div class="images">
-                        <img src="/assets/bigImg.png" alt="">
+                        <img src="/assets/bigImg.png" alt="Foto pandawara">
                     </div>
                     <div class="cardText">
                         <h4>Membersihkan selokan di ciseeng</h4>
@@ -54,7 +54,7 @@ const Home = {
                 <div class="coll2">
                     <div class="card">
                         <div class="images">
-                            <img src="/assets/smallImg.png" alt="">
+                            <img src="/assets/smallImg.png" alt="Foto pandawara">
                         </div>
                         <div class="cardText">
                             <h4>Membersihkan selokan di ciseeng</h4>
@@ -63,7 +63,7 @@ const Home = {
                     </div>
                     <div class="card card2">
                         <div class="images">
-                            <img src="/assets/smallImg.png" alt="">
+                            <img src="/assets/smallImg.png" alt="Foto pandawara">
                         </div>
                         <div class="cardText">
                             <h4>Membersihkan selokan di ciseeng</h4>
@@ -89,15 +89,15 @@ const Home = {
                 <h3>Menjaga Lingkungan Dengan</h3>
                 <div class="cardContent">
                     <div class="reduce">
-                        <img src="../assets/3R/lets-icons_reduce.png" alt="">
+                        <img src="../assets/3R/lets-icons_reduce.png" alt="Icon Reduce">
                         <h3><strong>Reduce</strong> berusaha mengurangi jumlah sampah yang di haruskan</h3>
                     </div>
                     <div class="reuse">
-                        <img src="../assets/3R/reuse 1.png" alt="">
+                        <img src="../assets/3R/reuse 1.png" alt="Icon Reuse">
                         <h3><strong>Reuse</strong> menggunakan kembali bahan yang masih bisa digunakan</h3>
                     </div>
                     <div class="recycle">
-                        <img src="../assets/3R/recycle-symbol 1.png" alt="">
+                        <img src="../assets/3R/recycle-symbol 1.png" alt="Icon Recycle">
                         <h3><strong>Reduce</strong> mengolah kembali sampah menjadi bahan yang bisa digunakan kembali</h3>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ const Home = {
                 <a href="#/laporan">
                     <div class="card">
                         <div class="images">
-                            <img src="../assets/Fitur/Plastic is the new coal, report finds.jpeg" alt="">
+                            <img src="../assets/Fitur/Plastic is the new coal, report finds.jpeg" alt="Gambar tumpukan sampah plastik">
                         </div>
                         <div class="cardText">
                             <h3>Laporkan sampah</h3>
@@ -134,7 +134,7 @@ const Home = {
                 <a href="#/jenis">
                     <div class="card">
                         <div class="images">
-                            <img src="../assets/Fitur/jenis.jpg" alt="">
+                            <img src="../assets/Fitur/jenis.jpg" alt="Gambar pengelompokan jenis sampah">
                         </div>
                         <div class="cardText">
                             <h3>Kenali jenis sampah</h3>
@@ -148,7 +148,7 @@ const Home = {
           <section class="scan">
             <div class="card">
                 <div class="images">
-                    <img src="../assets/qr.png" alt="">
+                    <img src="../assets/qr.png" alt="Barcode Saweria Sure">
                 </div>
                 <div class="cardText">
                     <h1>Donasi <br> Aplikasi Trashfinder</h1>

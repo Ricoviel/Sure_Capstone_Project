@@ -15,7 +15,7 @@ const SureEksplore = {
     <section class="scan">
         <div class="card">
             <div class="images">
-                <img src="../assets/qr.png" alt="">
+                <img src="../assets/qr.png" alt="Barcode Saweria Sure">
             </div>
             <div class="cardText">
                 <h1>Donasi <br> Aplikasi Trashfinder</h1>

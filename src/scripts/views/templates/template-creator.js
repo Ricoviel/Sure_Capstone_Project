@@ -7,7 +7,7 @@ const createHomeTrash = (trash) => `
             <a href="/#/trash/${trash.id}">
                 <div class="homeCardTrash">
                     
-                        <img src="${trash.pictures}" alt="">
+                        <img src="${trash.pictures}" alt="Tumpukan sampah">
                     
                     <div class="cardTextHomeDisplay">
                         <p>${trash.city}</p>
@@ -24,7 +24,7 @@ const createSureEksplore = (trash) => `
             <a href="/#/trash/${trash.id}">
                 <div class="card">
                     
-                        <img src="${trash.pictures}" alt="">
+                        <img src="${trash.pictures}" alt="Tumpukan sampah">
                     
                     <div class="cardText">
                         <p>${trash.city}</p>
@@ -72,7 +72,7 @@ const createTrashHasil = (trash) => `
             <a href="/#/finished/${trash.id}">
                 <div class="cardResult">
                     <div class="imagesResult">
-                        <img src="${trash.pictures}" alt="">
+                        <img src="${trash.pictures}" alt="Hasil pembersihan tumpukan sampah">
                     </div>
                     <div class="teksDesc">
                         <p>${trash.city}</p>
@@ -114,7 +114,7 @@ const createFinishedDetail = (trash) => `
 const createProofUpload = (trash) => `
         <div class="uploadCard">
                 <div class="imagesUpload">
-                    <img src="${trash.pictures[0]}" alt="">
+                    <img src="${trash.pictures[0]}" alt="Tumpukan sampah yang ingin dibersihkan">
                 </div>
                 <div class="uploadCardText">
                     <div class="header">

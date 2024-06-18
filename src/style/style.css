@@ -512,7 +512,10 @@ span{
 
 .scan .card p{
     font-size: 10px;
-
+}
+.scan .images img{
+    width: 100px;
+    height: 100px;
 }
 
 footer{

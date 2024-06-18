@@ -12,7 +12,7 @@ const AboutUs = {
                     <img src="../assets/informal-i.jpeg" alt="Foto ikbal fadilah">
                 </div>
                 <div class="cardText">
-                    <h3>No Name</h3>
+                    <h3>Ikbal Fadilah</h3>
                     <p>Front-End | UI-UX</p>
                     <br>
                     <p>Halo, perkenalkan nama saya Ikbal Fadillah. Saat ini, saya adalah seorang frontend developer yang sedang menempuh pendidikan di jurusan Teknik Informatika di Universitas Pancasila. Sebagai seorang mahasiswa, saya memiliki beberapa skill yang didapat dari proses pembelajaran di dalam maupun di luar kampus. Keahlian saya mencakup pembuatan website dan skill desain tampilan website. Tidak hanya itu, saya juga mahir dalam mengolah serta memproses data, serta mampu mengimplementasi desain ke dalam kodingan dengan baik</p>
@@ -20,13 +20,13 @@ const AboutUs = {
             </div>
             <div class="card">
                 <div class="images">
-                    <img src="../assets/../assets/informal-k.jpeg" alt="Foto Enrico Juan">
+                    <img src="../assets/../assets/informal-k.jpg" alt="Foto Enrico Juan">
                 </div>
                 <div class="cardText">
-                    <h3>No Name</h3>
+                    <h3>Enrico Juan Carlos</h3>
                     <p>Front-End | UI-UX</p>
                     <br>
-                    <p>Halo, perkenalkan nama saya Enrico Juan Carlos. Saya saat ini menempuh pendidikan di jurusan Teknik Informatika di Universitas Pancasila dan bekerja sebagai frontend developer. Sebagai mahasiswa, saya telah mengembangkan beberapa skill melalui pembelajaran di dalam dan di luar kampus. Keahlian saya termasuk membuat website yang responsive serta mendesain tampilan website dengan memanfaatkan skill desain, Figma, dan UI/UX. Selain itu, saya juga mahir dalam mengolah dan memproses data, serta dapat mengimplementasi desain ke dalam kodingan dengan efektif.</p>
+                    <p>Halo, perkenalkan nama saya Enrico Juan Carlos. Saya saat ini menempuh jurusan Teknik Informatika di Universitas Pancasila dan terjun di dunia frontend web developer. Sebagai mahasiswa, saya telah mengembangkan beberapa skill melalui pembelajaran di dalam dan di luar kampus. Keahlian saya termasuk membuat website yang responsive, mendesain tampilan website dengan Figma, dan merancang sebuah website dalam bentuk wireframe dan mockup. Selain itu, saya juga mahir dalam mengimplementasi desain ke dalam kodingan dengan efektif.</p>
                 </div>
             </div>
             <div class="card">
@@ -34,7 +34,7 @@ const AboutUs = {
                     <img src="../assets/informal-r.jpeg" alt="Foto Rian Wahyu">
                 </div>
                 <div class="cardText">
-                    <h3>No Name</h3>
+                    <h3>Rian Wahyu Abdillah</h3>
                     <p>Back-End | API </p>
                     <br>
                     <p>Halo, perkenalkan nama saya Rian Wahyu. Saat ini, saya adalah seorang Back-End Developer yang memiliki beberapa skill yang diperoleh melalui pembelajaran yang telah saya peroleh. Keahlian saya meliputi membuat website dan mendesain tampilan website. Selain itu, saya juga mahir dalam mengolah serta memproses data, mengintegrasikan API, mengatur database, serta mengembangkan dan memantau database. Saya juga berpengalaman dalam menghubungkan aplikasi pada server dan mengelola infrastruktur server. </p>
@@ -72,7 +72,7 @@ const AboutUs = {
       <section class="scan">
         <div class="card">
             <div class="images">
-                <img src="../assets/qr.png" alt="Gambar qris">
+                <img src="../assets/qr.png" alt="Barcode Saweria Sure">
             </div>
             <div class="cardText">
                 <h1>Donasi <br> Aplikasi Trashfinder</h1>
