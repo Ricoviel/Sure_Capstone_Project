@@ -1,0 +1,724 @@
+@media screen and (max-width: 1200px){
+    .main_register{    
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .main_login{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+
+
+
+/* Media 900 */
+@media (max-width:900px) {
+    /* Penyuluhan */
+.penyuluhanContent{
+    display: flex;
+    background-color: #4f6e52;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.recyle .cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.burger{
+    display: block;
+}
+
+.navigation{
+    display: none;
+}
+
+.sci{
+    display: none;
+}
+
+.penyuluhan{
+    color: #fff;
+    padding: 2rem 10%;
+}
+
+.penyuluhan .title{
+    text-align: center;
+    color: black;
+}
+
+.penyuluhan .title h3{
+    font-size: 30px;
+}
+
+.penyuluhanContent .coll1{
+    margin-right: 30px;
+    width: 50%;
+}
+
+.penyuluhanContent .coll2{
+    width: 50%;
+}
+
+.penyuluhanContent .coll1 img,
+.penyuluhanContent .coll2 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.penyuluhanContent .coll2 .card2{
+    margin-top: 30px;
+}
+
+.penyuluhanContent h4{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.penyuluhanContent p{
+    font-size: 12px;
+}
+
+.cardContent .reduce img{
+    width: 100px;
+}
+
+.cardContent .reuse img{
+    width: 100px;
+}
+
+.cardContent .recycle img{
+    width: 100px;
+}
+
+
+
+/* Trash */
+.trash{
+    padding: 2rem 10%;
+}
+
+.trash .title h3{
+    font-size: 30px;
+}
+
+.trashContent{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.organik .cardContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.galleryContent{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+.trash button{
+    margin-left: 50px;
+}
+
+
+/* Features */
+
+.featuresContent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+
+.galleryContent .card{
+    width: 100%;
+}
+
+.galleryContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.gallery .images,
+.gallery .images img{
+    width: 100%;
+}
+
+/* Login */
+.left-content {
+    flex: 0;
+    display: flex;
+    justify-content: center; /* Mengatur gambar di tengah */
+}
+
+.main_login {
+    display: flex;
+    padding: 4.4% 30px;
+    margin: 20px;
+    /* background-color: red; */
+}
+
+.right-content-Login{
+    background: linear-gradient(#4F6F52, #A8CD9F);
+    display: flex;
+    /* flex: 5; */
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    min-width: 460px; 
+    margin: 0 0px; 
+    width: 50%;
+}
+
+/* .image-animation {
+    height: 400px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 50px;
+} */
+
+/* Register */
+.main_register {
+    row-gap: 30px;
+}
+
+.right-content {
+    background: linear-gradient(#4F6F52, #A8CD9F);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    width: 100%;
+    min-width: 360px;
+    margin: 0;
+}
+
+.wrap_otp{
+    padding: 3rem 10%;
+  }
+
+/* TRASH DETAIL */
+.trashDetails .card{
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.trashDetails{
+    margin: 30px 0;
+}
+
+.trashDetails .images{
+    width: 100%;
+    margin-right: 0;
+    height: 400px;
+}
+
+.trashDetails .images img{
+    height: 100%;
+}
+
+.trashDetails h3{
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.trashDetails .cardText h3{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.trashDetails .cardText{
+    width: 100%;
+}
+}
+
+/* Media 830 */
+@media screen and (max-width: 830px){
+    /* LAPORAN */
+    .formLaporan .cards {
+         margin: 2% 2%;
+    }
+}
+
+
+/* Media 800 */
+@media screen and (max-width: 800px){
+    /* TENTANG KAMI */
+    .team .ourTeam{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        gap: 10px;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    /* JENIS */
+    .anorganik .cardContent{
+        flex-wrap: wrap;
+    }
+
+    .organik .cardContent {
+        flex-wrap: wrap-reverse !important;
+    }
+
+    .danger h3{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .danger .dangerContent img{
+        width: 100%;
+    }
+}
+
+/* Media 600 */
+@media screen and (max-width: 600px){
+    /* LAPORAN */
+    .uploadBoxLaporan{
+        width: 135px;
+        height: 135px;
+    }
+
+    .lapor .topLapor{
+        gap: 20px;
+    }
+
+    .formLaporan .col2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .formLaporan .col2 .card{
+        min-width: 98%;
+        margin: 5px;
+    }
+
+    /* EKSPLORASI */
+    .trashTitle{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/* Media 460 */
+@media (max-width:460px) {
+    .navigation{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .sci{
+        display: none;
+    }
+
+    .penyuluhanContent{
+        flex-wrap: wrap;
+    }
+        
+    .penyuluhan{
+        color: #fff;
+        padding: 2rem 2%;
+    }
+
+    .penyuluhan .title{
+        text-align: center;
+        color: black;
+    }
+
+    .penyuluhan .title h3{
+        font-size: 30px;
+    }
+
+    .penyuluhanContent .coll1{
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+
+
+    .penyuluhanContent .coll1 img{
+        width: 100% !important;
+    }
+
+    .penyuluhanContent .coll2{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    .penyuluhanContent .coll1 img,
+    .penyuluhanContent .coll2 img{
+        width: 100% !important;
+        border-radius: 20px;
+    }
+
+    .penyuluhanContent .coll2 .card2{
+        margin-top: 30px;
+    }
+
+    .cardContent .reduce img{
+        width: 70px;
+    }
+
+    .cardContent .reuse img{
+        width: 70px;
+    }
+
+    .cardContent .recycle img{
+        width: 70px;
+    }
+
+    /* Trash */
+    .trash{
+        padding: 2rem 10%;
+    }
+
+    .trash .title h3{
+        font-size: 30px;
+    }
+
+    .trashContent{
+        flex-wrap: wrap;
+    }
+
+    .trash .card{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .trash .trashContent h3{
+        margin: 5px 0;
+    }
+
+    .trash .trashContent img{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .trash button{
+        margin-left: 0 !important;
+    }
+
+    .trashHomeDisplay .homeCardTrash{
+        width: 100%;
+    }
+    
+
+    
+    /* Recyle */
+
+    .recyle .cardContent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    /* Features */
+
+    .featuresContent{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .features .card{
+        width: 100% !important;
+        margin-top: 30px;
+    }
+    
+    footer{
+        flex-wrap: wrap;
+    }
+
+    footer .card{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    /* Halaman Jenis */
+    .anorganik{
+        padding: 2rem 5%;
+    }
+
+    .anorganik .cardContent{
+        flex-wrap: wrap;
+    }
+
+    .anorganik .cardText h3{
+        font-size: 40px;
+    }
+
+    .organik .cardText h3{
+        font-size: 40px;
+    }
+
+    .anorganik2 .cardContent {
+        flex-wrap: wrap-reverse !important;
+    }
+
+ 
+    /* Danger */
+    .danger{
+        padding: 2rem 2%;
+        text-align: center;
+    }
+
+    .danger h3{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .danger .dangerContent img{
+        width: 100%;
+    }
+
+    .galleryContent{
+        flex-wrap: wrap;
+    }
+
+    .galleryContent .card{
+        width: 100%;
+    }
+
+    .galleryContent .card img{
+        width: 100%;
+    }
+
+    /* Laporan */
+    /* .trashDetails .card{
+        flex-wrap: wrap;
+        margin-top: 10px;
+    } */
+
+    /* .trashDetails{
+        margin: 30px 0;
+    } */
+
+    .trashDetails .images{
+        height: 100%;
+    }
+
+    .organik .cardContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+    }
+
+    .trashDetails .images img{
+        height: 50%;
+    }
+
+    .trashDetails h3{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .trashDetails .cardText h3{
+        margin-top: 20px;
+    }
+
+    .trashDetails .cardText p{
+        font-size: 13px;
+    }
+
+    .trashDetails .cardText p > a{
+        /* background-color: red; */
+        font-size: 13px;
+    }
+
+    .lapor .topLapor button{
+        padding: 30px 40px;
+        border: none;
+        margin-right: 20px;
+        border-radius: 10px;
+        font-size: 30px;
+    }
+
+    .uploadCard {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        flex-wrap: wrap;
+    
+        /* background-color: red; */
+    }
+
+    .uploadCard .imagesUpload{
+        width: 350px;
+    }
+
+    .uploadCard .imagesUpload img{
+        width: 100%;
+    }
+
+    /* Login Start */
+    .main_login{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 2% 2%;
+        margin-left: 13px;
+        /* background-color: red; */
+    }
+    
+    .right-content-Login{
+        background: linear-gradient(#4F6F52, #A8CD9F);
+        margin: 0 0; 
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 12px;
+        min-width: 200px;
+    }
+
+    .right-content-Login > form > .input{
+        margin: 0px 0px;
+    }
+
+    /* Register */
+    .main_register{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 2% 2%;
+        margin-left: 13px;
+    }
+
+    .right-content {
+        
+        background: linear-gradient(#4F6F52, #A8CD9F);
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: 16px;
+        min-width: 200px;
+        margin: 0 0px;
+    }
+
+    .right-content > form > .input{
+        margin: 0px 0px;
+    }
+
+    .wrap_otp{
+        padding: 0;
+      }
+
+    /* Laporan */
+    /* .uploadBoxLaporan{
+        width: 115px;
+        height: 115px;
+        
+        font-size: 28px;
+    } */
+
+    .uploadBoxLaporan{
+        width: 110px;
+        height: 110px;
+       
+
+        margin-right: 0px;
+    }
+
+
+    footer{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 350px){
+    /* FINISHED DETAIL */
+    
+    .trashDetails .cardText p{
+        font-size: 11.5px;
+    }
+    
+    .trashDetails .cardText p > a{
+        /* background-color: red; */
+        font-size: 9.5px;
+    }
+
+    /* EKSPLORASI */
+    .trashTitle{
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    .trash{
+        padding: 0.5rem 5%
+    }
+
+    /* JENIS */
+    .anorganik .cardText h3{
+        font-size: 25px;
+    }
+    .anorganik .cardText p{
+        font-size: 15px;
+    }
+
+    .organik .cardText h3{
+        font-size: 25px;
+    }
+    .organik .cardText p{
+        font-size: 15px;
+    }
+
+    .danger h3{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .danger p{
+        font-size: 15px;
+    }
+}

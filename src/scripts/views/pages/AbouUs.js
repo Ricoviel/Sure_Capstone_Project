@@ -9,7 +9,7 @@ const AboutUs = {
         <div class="ourTeam">
             <div class="card">
                 <div class="images">
-                    <img src="../assets/team1.png" alt="">
+                    <img src="../assets/informal-i.jpeg" alt="">
                 </div>
                 <div class="cardText">
                     <h3>No Name</h3>
@@ -20,7 +20,7 @@ const AboutUs = {
             </div>
             <div class="card">
                 <div class="images">
-                    <img src="../assets/team2.png" alt="">
+                    <img src="../assets/../assets/informal-k.jpeg" alt="">
                 </div>
                 <div class="cardText">
                     <h3>No Name</h3>

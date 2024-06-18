@@ -126,7 +126,7 @@ const Home = {
                     </div>
                     <div class="cardText">
                         <h3>Bersihkan sampah</h3>
-                        <p>Ayo bersihkan sampah yang mengganggu, masing-masing kontribusi dari kita akan membuat lingkungan kita terbebas dari polusi sampah.</p>
+                        <p>Ayo, kontribusi dari kita akan membuat lingkungan kita terbebas dari polusi sampah.</p>
                     </div>
                 </div>
             </a>

@@ -9,12 +9,12 @@ const Login = {
             <h2>LOGIN</h2>
             <form id="formulir-Login">
                 <div class="input">
-                    <img src="../assets/icon-user.png" alt="" class="iconUserLogin">
+                  
                     <label for="inputLoginUsername"></label>
                     <input id="inputLoginUsername" name="username" type="text" required placeholder="Username">
                 </div>
                 <div class="input">
-                    <img src="../assets/icon-password.png" alt="" class="iconUserPassword">
+                 
                     <label for="inputLoginUserPassword"></label>
                     <input id="inputLoginUserPassword" name="password" type="password" required placeholder="Password">
                 </div>

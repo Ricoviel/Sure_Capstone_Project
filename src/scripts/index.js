@@ -1,7 +1,8 @@
 import 'regenerator-runtime';
 import '../style/style.css';
+import '../style/responsive.css';
 import './components/dropdown.js';
-import './components/carousel.js';
+// import './components/carousel.js';
 import App from './views/app';
 
 const app = new App({

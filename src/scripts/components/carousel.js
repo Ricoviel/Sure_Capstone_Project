@@ -12,7 +12,7 @@ const swiper = new Swiper('.mySwiper', {
   centeredSlides: true,
   autoplay: {
     delay: 2000,
-    disabledonINteraction: false,
+    disableOnInteraction: false,
   },
   breakpoints: {
     0: {
