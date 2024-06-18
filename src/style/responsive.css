@@ -228,6 +228,8 @@
 /* TRASH DETAIL */
 .trashDetails .card{
     flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
@@ -238,11 +240,12 @@
 .trashDetails .images{
     width: 100%;
     margin-right: 0;
-    height: 400px;
+    height: auto;
 }
 
 .trashDetails .images img{
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .trashDetails h3{
@@ -259,6 +262,15 @@
 
 .trashDetails .cardText{
     width: 100%;
+}
+.trashDetails ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.trashDetails ul li i {
+    margin-right: 5px;
 }
 }
 

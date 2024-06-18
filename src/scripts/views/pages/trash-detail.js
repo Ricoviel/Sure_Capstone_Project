@@ -1,3 +1,4 @@
+import Swiper from 'swiper';
 import SureDBSource from '../../data/sure-source';
 import { createTrashDetail } from '../templates/template-creator';
 import UrlParser from '../../routes/url-parser';
@@ -17,6 +18,23 @@ const TrashDetail = {
     console.log('data:', getDetail);
     const DetailContainer = document.querySelector('#trashDetails');
     DetailContainer.innerHTML = createTrashDetail(getDetail);
+
+    const initSwiper = () => {
+      // eslint-disable-next-line no-new
+      new Swiper('.mySwiper', {
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    };
+
+    initSwiper();
 
     document.getElementById('kerjakanButton').addEventListener('click', () => {
       // Ambil nilai ID dari atribut data

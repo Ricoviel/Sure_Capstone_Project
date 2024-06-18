@@ -38,24 +38,33 @@ const createSureEksplore = (trash) => `
 
 const createTrashDetail = (trash) => `
     <section id="detailWrap" data-id="${trash.id}">
-        <h3>Detail Sampah</h3>
-        <div class="card">
-            <div class="images">
-                <img src="${trash.pictures[0]}" alt="">
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> ${trash.city}</li>
-                    <li>${trash.uploader_name}</li>
-                </ul>
+    <h3>Detail Sampah</h3>
+    <div class="card">
+        <div class="images swiper mySwiper">
+            <div class="swiper-wrapper">
+                ${trash.pictures.map((picture) => `
+                    <div class="swiper-slide">
+                        <img src="${picture}" alt="${trash.title}">
+                    </div>
+                `).join('')}
             </div>
-            <div class="cardText">
-                <h3>${trash.title}</h3>
-                <p class="descriptionDetail">${trash.description}</p>
-                <p class="addressDetail"><i>Alamat: ${trash.address}</i></p>
-                <p><strong>Saya ingin membersihkan tempat ini</strong></p>
-                <button id="kerjakanButton">Kerjakan</button>
-            </div>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> ${trash.city}</li>
+                <li>${trash.uploader_name}</li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-    </section>
+        <div class="cardText">
+            <h3>${trash.title}</h3>
+            <p class="descriptionDetail">${trash.description}</p>
+            <p class="addressDetail"><i>Alamat: ${trash.address}</i></p>
+            <p><strong>Saya ingin membersihkan tempat ini</strong></p>
+            <button id="kerjakanButton">Kerjakan</button>
+        </div>
+    </div>
+</section>
 `;
 
 const createTrashHasil = (trash) => `
@@ -76,21 +85,30 @@ const createTrashHasil = (trash) => `
 `;
 
 const createFinishedDetail = (trash) => `
-        <h3>Sampah Sudah Dibersihkan</h3>
-        <div class="card">
-            <div class="images">
-                <img src="${trash.pictures[0]}" alt="">
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> ${trash.city}</li>
-                    <li>${trash.finisher_name}</li>
-                </ul>
+    <h3>Sampah Sudah Dibersihkan</h3>
+    <div class="card">
+        <div class="images swiper mySwiper">
+        <div class="swiper-wrapper">
+        ${trash.pictures.map((picture) => `
+            <div class="swiper-slide">
+            <img src="${picture}" alt="${trash.title}">
             </div>
-            <div class="cardText">
-                <h3>${trash.title}</h3>
-                <p>${trash.finisher_message}</p>
-                <p><a href="${trash.location_url}" target="_blank"> <i class="fas fa-map-marker-alt"></i> ${trash.location_url}</a></p>
+            `).join('')}
             </div>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> ${trash.city}</li>
+                <li>${trash.finisher_name}</li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
+        <div class="cardText">
+            <h3>${trash.title}</h3>
+            <p>${trash.finisher_message}</p>
+            <p><a href="${trash.location_url}" target="_blank"> <i class="fas fa-map-marker-alt"></i> ${trash.location_url}</a></p>
+        </div>
+    </div>
 `;
 
 const createProofUpload = (trash) => `

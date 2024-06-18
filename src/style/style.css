@@ -701,68 +701,88 @@ footer i{
 }
 
 /* Trash Detail */
-.trashDetails{
+.trashDetails {
     margin: 100px 0;
     margin-top: 75px;
     padding: 1rem 5%;
 }
 
-
-.trashDetails .card{
+.trashDetails .card {
     display: flex;
     margin-top: 20px;
 }
 
-.trashDetails h3{
+.trashDetails h3 {
     font-size: 30px;
 }
 
-
-.trashDetails .images{
+.trashDetails .images {
     width: 500px;
     margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.trashDetails img{
+.trashDetails img {
     width: 100%;
     border-radius: 20px;
     height: 300px;
+    object-fit: cover;
 }
 
-.trashDetails .cardText{
-    width: 700px;
+.trashDetails .cardText {
+    flex: 1;
     text-align: justify;
 }
 
-.trashDetails .cardText p{
-    margin:10px 0;
+.trashDetails .cardText h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-.trashDetails .cardText .addressDetail{
-    font-size: 12px;
-    /* background-color: yellowgreen; */
+.trashDetails .cardText p {
     margin: 10px 0;
 }
 
-.trashDetails .cardText .descriptionDetail{
+.trashDetails .cardText .addressDetail {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.trashDetails .cardText .descriptionDetail {
     margin: 0;
 }
 
-.trashDetails button{
+.trashDetails button {
     padding: 10px 20px;
     border-radius: 30px;
     border: none;
     margin-top: 10px;
     cursor: pointer;
+    background-color: #4f6e52;
+    color: white;
 }
 
-
-.trashDetails ul{
+.trashDetails ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
     color: gray;
+    padding: 0;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+.trashDetails ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.trashDetails ul li i {
+    margin-right: 5px;
 }
 
 /* Lapooran */

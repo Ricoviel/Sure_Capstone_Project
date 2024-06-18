@@ -9,7 +9,7 @@ const AboutUs = {
         <div class="ourTeam">
             <div class="card">
                 <div class="images">
-                    <img src="../assets/informal-i.jpeg" alt="">
+                    <img src="../assets/informal-i.jpeg" alt="Foto ikbal fadilah">
                 </div>
                 <div class="cardText">
                     <h3>No Name</h3>
@@ -20,7 +20,7 @@ const AboutUs = {
             </div>
             <div class="card">
                 <div class="images">
-                    <img src="../assets/../assets/informal-k.jpeg" alt="">
+                    <img src="../assets/../assets/informal-k.jpeg" alt="Foto Enrico Juan">
                 </div>
                 <div class="cardText">
                     <h3>No Name</h3>
@@ -31,7 +31,7 @@ const AboutUs = {
             </div>
             <div class="card">
                 <div class="images">
-                    <img src="../assets/team3.png" alt="">
+                    <img src="../assets/team3.png" alt="Foto Rian Wahyu">
                 </div>
                 <div class="cardText">
                     <h3>No Name</h3>
@@ -72,7 +72,7 @@ const AboutUs = {
       <section class="scan">
         <div class="card">
             <div class="images">
-                <img src="../assets/qr.png" alt="">
+                <img src="../assets/qr.png" alt="Gambar qris">
             </div>
             <div class="cardText">
                 <h1>Donasi <br> Aplikasi Trashfinder</h1>
