@@ -1,8 +1,0 @@
-import "./components/headbar.js"
-import "../../dropdown.js"
-// import "../../carousel.js"
-import "./components/recycle.js"
-import "./components/feature.js"
-import "./components/scan.js"
-import "./components/footbar.js"
-import "./components/footerLogin.js"
