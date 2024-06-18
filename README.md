@@ -19,6 +19,6 @@ The SURE Project (Sarana Usaha Recycle Edukasi) is an initiative developed by th
 
 ## Steps
 1. npm install
-2. npm install swiper
+3. npm run start-dev
 
 
