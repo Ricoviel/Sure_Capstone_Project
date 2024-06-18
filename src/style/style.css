@@ -846,20 +846,19 @@ footer i{
 /* Form Register */
 .main_register{
     display: flex;
-    
     padding: 2.84% 30px;
     margin: 15px 80px;
 }
 
 .right-content{
-    flex: 5;
+    
     background: linear-gradient(#4F6F52, #A8CD9F);
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     border-radius: 12px;
     padding: 16px;
-    max-width: 500px; 
+    width: 500px; 
     margin: 0 60px; /* Center the form */
 }
 
@@ -885,12 +884,12 @@ footer i{
     margin-right: 50px; 
 }
 
-.left-content {
+/* .left-content {
     flex: 4;
     display: flex;
-    justify-content: center; /* Mengatur gambar di tengah */
+    justify-content: center; 
     margin: auto;
-}
+} */
 
 .right-content #register{
     font-size: 14px;
@@ -980,15 +979,15 @@ footer i{
 }
 
 .right-content-Login{
-    flex: 5;
     background: linear-gradient(#4F6F52, #A8CD9F);
     display: flex;
+    /* flex: 5; */
     flex-direction: column;
     border: 1px solid black;
     border-radius: 12px;
     padding: 16px;
-    max-width: 500px; 
-    margin: 0 60px; /* Center the form */
+    width: 500px; 
+    margin: 0 60px; 
 }
 
 .right-content-Login p{
@@ -1018,6 +1017,7 @@ footer i{
     display: flex;
     justify-content: center; /* Mengatur gambar di tengah */
 }
+
 .right-content-Login #login{
     font-size: 14px;
     background-color: white;
@@ -1108,7 +1108,7 @@ footer i{
 }
 
 .uploadCard .imagesUpload img {
-    max-width: 250px;
+    width: 400px;
     height: auto;
     display: block;
 }
@@ -1224,9 +1224,17 @@ footer i{
     padding: 10px;
 }
 
+.team .ourTeam .card .images{
+    width: 100%;
+    height: 400px;
+}
+
 .team .ourTeam .card img{
     width: 100%;
+    height: 100%;
 }
+
+
 /* End Tentang Kami */
 
 /* visi */
@@ -1416,6 +1424,24 @@ footer i{
     background-color:#b0b0b0;
 }
 
+
+/* icon */
+.input .iconUserLogin {
+    position: absolute;
+    right: 230px;
+    top: 293px;
+    height: 30px;
+    width: 30px;
+}
+
+.input .iconUserPassword {
+    position: absolute;
+    right: 230px;
+    top: 370px;
+    height: 30px;
+    width: 30px;
+}
+
 /* END Halaman Verifikasi */
 
 
@@ -1441,6 +1467,245 @@ footer i{
 
 
 
+
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    /* Penyuluhan */
+.penyuluhanContent{
+    display: flex;
+    background-color: #4f6e52;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.recyle .cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.burger{
+    display: block;
+}
+
+.navigation{
+    display: none;
+}
+
+.sci{
+    display: none;
+}
+
+.penyuluhan{
+    color: #fff;
+    padding: 2rem 10%;
+}
+
+.penyuluhan .title{
+    text-align: center;
+    color: black;
+}
+
+.penyuluhan .title h3{
+    font-size: 30px;
+}
+
+.penyuluhanContent .coll1{
+    margin-right: 30px;
+    width: 50%;
+}
+
+.penyuluhanContent .coll2{
+    width: 50%;
+}
+
+.penyuluhanContent .coll1 img,
+.penyuluhanContent .coll2 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.penyuluhanContent .coll2 .card2{
+    margin-top: 30px;
+}
+
+.penyuluhanContent h4{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.penyuluhanContent p{
+    font-size: 12px;
+}
+
+.cardContent .reduce img{
+    width: 100px;
+}
+
+.cardContent .reuse img{
+    width: 100px;
+}
+
+.cardContent .recycle img{
+    width: 100px;
+}
+
+
+
+/* Trash */
+.trash{
+    padding: 2rem 10%;
+}
+
+.trash .title h3{
+    font-size: 30px;
+}
+
+.trashContent{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.organik .cardContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.trash button{
+    margin-left: 50px;
+}
+
+
+/* Features */
+.features{
+    padding: 2rem 10%;
+}
+
+.features .title h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.featuresContent{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.features .card{
+    width: 200px;
+}
+
+
+.galleryContent .card{
+    width: 100%;
+}
+
+.galleryContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.gallery .images,
+.gallery .images img{
+    width: 100%;
+}
+
+/* Login */
+.left-content {
+    flex: 0;
+    display: flex;
+    justify-content: center; /* Mengatur gambar di tengah */
+}
+
+.main_login {
+    display: flex;
+    padding: 4.4% 30px;
+    margin: 20px;
+    /* background-color: red; */
+}
+
+.right-content-Login{
+    background: linear-gradient(#4F6F52, #A8CD9F);
+    display: flex;
+    /* flex: 5; */
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    width: 500px; 
+    margin: 0 0px; 
+}
+
+.image-animation {
+    height: 400px;
+    /* width: 400px; */
+    /* display: block; */
+    max-width: 200px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+/* Register */
+.main_register {
+    display: flex;
+    padding: .5% 30px;
+    margin: 20px;
+}
+
+.input .iconUserLogin {
+    position: absolute;
+    right: 110px;
+    top: 260px;
+    height: 30px;
+    width: 30px;
+}
+
+.input .iconUserPassword {
+    position: absolute;
+    right: 113px;
+    top: 337px;
+    height: 30px;
+    width: 30px;
+}
+
+.right-content {
+    background: linear-gradient(#4F6F52, #A8CD9F);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    width: 500px;
+    margin: 0;
+}
+
+.wrap_otp{
+    padding: 3rem 10%;
+  }
+
+}
 
 
 
@@ -1509,6 +1774,18 @@ footer i{
         margin-top: 30px;
     }
 
+    .cardContent .reduce img{
+        width: 70px;
+    }
+
+    .cardContent .reuse img{
+        width: 70px;
+    }
+
+    .cardContent .recycle img{
+        width: 70px;
+    }
+
     /* Trash */
     .trash{
         padding: 2rem 10%;
@@ -1539,6 +1816,11 @@ footer i{
     .trash button{
         margin-left: 0 !important;
     }
+
+    .trashHomeDisplay .homeCardTrash{
+        width: 100%;
+    }
+    
 
     
     /* Recyle */
@@ -1633,6 +1915,13 @@ footer i{
         height: 400px;
     }
 
+    .organik .cardContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+    }
+
     .trashDetails .images img{
         height: 100%;
     }
@@ -1650,6 +1939,81 @@ footer i{
         font-size: 30px;
     }
 
+    .uploadCard {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        flex-wrap: wrap;
+    
+        /* background-color: red; */
+    }
+
+    .uploadCard .imagesUpload{
+        width: 350px;
+    }
+
+    .uploadCard .imagesUpload img{
+        width: 100%;
+    }
+
+    /* Login Start */
+    .main_login{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 2% 2%;
+        margin-left: 13px;
+        /* background-color: red; */
+    }
+    
+    .right-content-Login{
+        background: linear-gradient(#4F6F52, #A8CD9F);
+        margin: 0 0; 
+        width: 360px; 
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 12px;
+    }
+
+    .input .iconUserLogin {
+        display: none;
+    }
+
+    .input .iconUserPassword {
+        display: none;
+    }
+
+    /* Register */
+    .main_register{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 2% 2%;
+        margin-left: 13px;
+    }
+
+    .right-content {
+        
+        background: linear-gradient(#4F6F52, #A8CD9F);
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: 16px;
+        width: 360px;
+        margin: 0 0px;
+    }
+
+    .wrap_otp{
+        padding: 0;
+      }
+      
+
+
     footer{
         text-align: center;
     }
@@ -1661,129 +2025,3 @@ footer i{
 
 
 
-
-@media (max-width:800px) {
-    /* Penyuluhan */
-.penyuluhanContent{
-    display: flex;
-    background-color: #4f6e52;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.recyle .cardContent{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.penyuluhan{
-    color: #fff;
-    padding: 2rem 10%;
-}
-
-.penyuluhan .title{
-    text-align: center;
-    color: black;
-}
-
-.penyuluhan .title h3{
-    font-size: 30px;
-}
-
-.penyuluhanContent .coll1{
-    margin-right: 30px;
-    width: 50%;
-}
-
-.penyuluhanContent .coll2{
-    width: 50%;
-}
-
-.penyuluhanContent .coll1 img,
-.penyuluhanContent .coll2 img{
-    width: 100%;
-    border-radius: 20px;
-}
-
-.penyuluhanContent .coll2 .card2{
-    margin-top: 30px;
-}
-
-.penyuluhanContent h4{
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.penyuluhanContent p{
-    font-size: 12px;
-}
-
-
-
-/* Trash */
-.trash{
-    padding: 2rem 10%;
-}
-
-.trash .title h3{
-    font-size: 30px;
-}
-
-.trashContent{
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.trash button{
-    margin-left: 50px;
-}
-
-
-/* Features */
-.features{
-    padding: 2rem 10%;
-}
-
-.features .title h3{
-    text-align: center;
-    font-size: 40px;
-}
-
-.featuresContent{
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.features .card{
-    width: 200px;
-}
-
-
-.galleryContent .card{
-    width: 350px;
-}
-
-.galleryContent{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.gallery .images,
-.gallery .images img{
-    width: 100%;
-}
-
-}
