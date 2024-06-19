@@ -15,9 +15,9 @@
 - **User Authentication:** Login and register to access more features.
 
 ## Requirements
-- **Eslint**
-- **Webpack**
-- **Swiper**
+- **Eslint** v8.57.0
+- **Webpack** v5.92.0
+- **Swiper** v11.1.4
 - **Fontawesome**
 
 ## Getting Started
