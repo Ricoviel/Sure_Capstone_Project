@@ -1,6 +1,7 @@
 <h1 align="center">The SURE Project (Sarana Usaha Recycle Edukasi)</h1>
 
-![screencapture-localhost-4000-2024-06-18-21_59_00](https://github.com/Ricoviel/Sure_Capstone_Project/assets/153353002/fc8f0b7d-76bc-41e9-926b-3daacefe02f6)
+
+![screencapture-localhost-4000-2024-06-18-21_59_00](https://github.com/Ricoviel/Sure_Capstone_Project/assets/153353002/6273dfa2-e466-4d8c-b153-27970c348df8)
 
 ## Overview
 **The SURE Project (Sarana Usaha Recycle Edukasi)** is an initiative developed by the **C624-PS078** team to enhance public awareness and participation in waste management practices in Indonesia. Through this project, a website has been established to serve as an educational platform, aiming to instill a greater sense of environmental responsibility among **masyarakat** (Indonesian citizens) and encourage their active involvement in waste management efforts.
